@@ -14,6 +14,7 @@ export const t = {
     pricing: { en: "Pricing", am: "ዋጋ", om: "Gatii" },
     portfolio: { en: "Portfolio", am: "ፖርትፎሊዮ", om: "Poortfooliyoo" },
     contact: { en: "Contact", am: "ያግኙን", om: "Nu Quunnamaa" },
+    oromoHistory: { en: "Oromo History", am: "የኦሮሞ ታሪክ", om: "Seenaa Oromoo" },
     getStarted: { en: "Get Started", am: "ይጀምሩ", om: "Jalqabaa" },
   },
   hero: {
