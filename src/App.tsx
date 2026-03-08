@@ -13,6 +13,8 @@ import Contact from "./pages/Contact";
 import OromoHistory from "./pages/OromoHistory";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import AdminLogin from "./pages/AdminLogin";
+import AdminSecurity from "./pages/AdminSecurity";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,8 @@ const App = () => (
             <Route path="/oromo-history" element={<OromoHistory />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/admin/security" element={<AdminSecurity />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
