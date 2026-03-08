@@ -710,5 +710,69 @@ export const t = {
         },
       },
     ],
+    // Notable Leaders
+    leadersLabel: { en: "Notable Figures", am: "ታዋቂ ሰዎች", om: "Namoota Beekamoo" },
+    leadersTitle: { en: "Legendary Oromo Leaders", am: "አፈ ታሪካዊ የኦሮሞ መሪዎች", om: "Hoggantoota Oromoo Seenaa Qabeessa" },
+    leadersDesc: {
+      en: "Throughout history, remarkable Oromo leaders have shaped the course of the Horn of Africa through their courage, vision, and leadership.",
+      am: "በታሪክ ውስጥ ልዩ ልዩ የኦሮሞ መሪዎች በድፍረታቸው፣ በራዕያቸው እና በአመራራቸው የአፍሪካ ቀንድን ታሪክ ቀርፀዋል።",
+      om: "Seenaa keessatti hogganoonni Oromoo addaa ta'an gootummaa, mul'ataa fi hogganummaa isaaniitiin adeemsa Gaanfa Afriikaa bocaniiru.",
+    },
+    leaders: [
+      {
+        name: "Abba Jifar II",
+        era: { en: "1861–1934", am: "1861–1934", om: "1861–1934" },
+        desc: {
+          en: "King of Jimma Abba Jifar, one of the five Gibe kingdoms. A skilled diplomat who maintained Jimma's autonomy through strategic alliances, making it one of the last independent Oromo kingdoms.",
+          am: "የጅማ አባ ጅፋር ንጉስ፣ ከአምስቱ የጊቤ መንግስታት አንዱ። ጅማን በስልታዊ ህብረት ራስ ገዝነቷን ያስጠበቀ ብቃት ያለው ዲፕሎማት።",
+          om: "Mootii Jimma Abbaa Jifaar, mootummoota Gibee shanan keessaa tokko. Diplomaatii ogummaa qabu kan birmadummaa Jimmaa tumsa tarsiimootiitiin eege, mootummoota Oromoo walaba ta'an keessaa isa dhumaa godhe.",
+        },
+      },
+      {
+        name: "Ras Gobana Dacche",
+        era: { en: "1821–1889", am: "1821–1889", om: "1821–1889" },
+        desc: {
+          en: "A powerful Oromo military leader and general who played a significant role in the expansion of the Ethiopian Empire. Despite controversy, he remains one of the most influential Oromo figures of the 19th century.",
+          am: "የኢትዮጵያ ኢምፓየር መስፋፋት ላይ ጉልህ ሚና የተጫወተ ኃያል የኦሮሞ ወታደራዊ መሪ። ከውዝግብ ቢኖርም በ19ኛው ክፍለ ዘመን ከፍተኛ ተጽዕኖ ካላቸው የኦሮሞ ሰዎች አንዱ ነው።",
+          om: "Hogganaa waraanaa Oromoo cimaa kan babal'ina Impaayera Itoophiyaa keessatti gahee guddaa taphate. Falmiilee ta'us, jaarraa 19ffaa keessatti namoota Oromoo dhiibbaa guddaa qaban keessaa tokko ta'ee hafa.",
+        },
+      },
+      {
+        name: "General Tadesse Birru",
+        era: { en: "1921–1975", am: "1921–1975", om: "1921–1975" },
+        desc: {
+          en: "A decorated Ethiopian military general of Oromo origin who became a champion of Oromo rights. He advocated for the recognition of Afaan Oromoo and equal rights for the Oromo people, ultimately paying with his life.",
+          am: "ለኦሮሞ መብቶች ተሟጋች የሆነ ክቡር የኢትዮጵያ ጦር ጄኔራል። የአፋን ኦሮሞ እውቅና እና ለኦሮሞ ህዝብ እኩል መብቶች ተከራክሯል።",
+          om: "Jeneraalii waraanaa Itoophiyaa kabajamaa dhiiga Oromoo kan mirga Oromoo falmuuf ka'e. Beekamtii Afaan Oromoo fi mirga walqixaa ummata Oromootiif falme, jireenya isaatiin kaffale.",
+        },
+      },
+      {
+        name: "Haile Fida",
+        era: { en: "1943–1979", am: "1943–1979", om: "1943–1979" },
+        desc: {
+          en: "A brilliant Oromo linguist and intellectual who developed the Latin-based script (Qubee) for writing Afaan Oromoo. His work laid the foundation for Oromo literacy and language standardization.",
+          am: "ለአፋን ኦሮሞ መጻፊያ የላቲን ቅርጸ ቁምፊ (ቁቤ) ያዘጋጀ ብቃት ያለው የኦሮሞ ቋንቋ ተመራማሪ። ስራው ለኦሮሞ ማንበብና መጻፍ እና ቋንቋ ደረጃ ማስያዝ መሰረት ጥሏል።",
+          om: "Hayyuu afaanii Oromoo qaroo kan barreeffama Afaan Oromootiif akkaataa qubee Laatinii (Qubee) qopheesse. Hojiin isaa bu'uura barreeffamaa fi dhaabbata afaan Oromootiif kaa'e.",
+        },
+      },
+    ],
+    // Qubee Alphabet
+    qubeeLabel: { en: "Language & Identity", am: "ቋንቋ እና ማንነት", om: "Afaan fi Eenyummaa" },
+    qubeeTitle: { en: "The Qubee Alphabet: Writing the Oromo Voice", am: "ቁቤ ፊደል: የኦሮሞ ድምፅ መጻፊያ", om: "Qubee: Sagalee Oromoo Barreessuu" },
+    qubeeP1: {
+      en: "For centuries, Afaan Oromoo — one of the most widely spoken languages in Africa — had no standardized writing system. The adoption of the Latin-based Qubee alphabet in 1991 was a watershed moment in Oromo history, enabling millions to read and write in their mother tongue for the first time.",
+      am: "ለዘመናት አፋን ኦሮሞ — ከአፍሪካ በስፋት ከሚነገሩ ቋንቋዎች አንዱ — ደረጃውን የጠበቀ የጽሑፍ ስርዓት አልነበረውም። በ1991 የላቲን ቅርጸ ቁቤ ፊደል መቀበል በኦሮሞ ታሪክ ውስጥ ወሳኝ ነጥብ ነበር።",
+      om: "Jaarraa hedduuf Afaan Oromoo — afaanota Afriikaa keessatti bal'inaan dubbataman keessaa tokko — sirna barreeffamaa dhaabbataa hin qabu ture. Fudhannaan Qubee akkaataa Laatinii bara 1991 seenaa Oromoo keessatti yeroo jijjiiramaa ture, miliyoonota afaan haadhaatiin dubbisuu fi barreessuu dandeessise.",
+    },
+    qubeeP2: {
+      en: "The intellectual groundwork for Qubee was laid by scholars like Haile Fida and Sheikh Bakri Sapalo, who championed the idea that Afaan Oromoo deserved its own accessible writing system. After decades of suppression, the Oromo Liberation Front (OLF) officially adopted Qubee in 1991.",
+      am: "ለቁቤ የአዕምሮ መሰረት እንደ ሀይሌ ፊዳ እና ሸህ በክሪ ሳፓሎ ባሉ ምሁራን ተጥሏል። ከአስርት ዓመታት ጭቆና በኋላ የኦሮሞ ነፃነት ግንባር (OLF) በ1991 ቁቤን በይፋ ተቀበለ።",
+      om: "Bu'uurri yaadaa Qubee hayyoota akka Haaile Fidaa fi Sheikh Bakrii Saphaloo faan kaa'ame, kan yaada Afaan Oromoo sirna barreeffamaa mataa isaa dhaqqabamaa ta'e argachuu qabu jedhu falman. Dhiibbaa waggoota kurnoota booda, Addi Bilisummaa Oromoo (ABO) bara 1991 Qubee ifatti fudhate.",
+    },
+    qubeeP3: {
+      en: "Today, Qubee is the official script of the Oromia Regional State. It is used in schools, government, media, and literature. The alphabet has 33 characters (including 5 vowels and 28 consonants) and uses doubled letters to represent long sounds — a feature that elegantly captures the phonetic richness of Afaan Oromoo.",
+      am: "ዛሬ ቁቤ የኦሮሚያ ክልል ኦፊሴላዊ ጽሁፍ ነው። በትምህርት ቤቶች፣ በመንግስት፣ በሚዲያ እና በስነ-ጽሁፍ ጥቅም ላይ ይውላል። ፊደሉ 33 ቁምፊዎች ያሉት ሲሆን ረዥም ድምፆችን ለማሳየት የድርብ ፊደል ይጠቀማል።",
+      om: "Har'a Qubeen barreeffama ifatti Mootummaa Naannoo Oromiyaa ti. Manneen barnootaa, mootummaa, miidiyaa fi ogbarruu keessatti fayyadama. Qubeen arfii 33 (dubbachiiftota 5 fi dubbifamtoota 28 dabalatee) qaba, sagalee dheeraa agarsiisuf qubee dachaa fayyadama — amala miidhagaa badhaadhina sagalee Afaan Oromoo qabatu.",
+    },
   },
 } as const;
