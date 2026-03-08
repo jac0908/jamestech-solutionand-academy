@@ -49,7 +49,7 @@ const Contact = () => {
             <div className="space-y-6">
               {[
                 { icon: Mail, label: c.email[lang], value: "yaikobdiriba22@gmail.com" },
-                { icon: Phone, label: c.phone[lang], value: "+251 11 234 5678" },
+                { icon: Phone, label: c.phone[lang], value: "+251 922 067 302" },
                 { icon: MapPin, label: c.headquarters[lang], value: "Bole Road, Addis Ababa, Ethiopia" },
                 { icon: Clock, label: c.businessHours[lang], value: "Mon – Fri, 8:30 AM – 5:30 PM EAT" },
               ].map((item) => (
