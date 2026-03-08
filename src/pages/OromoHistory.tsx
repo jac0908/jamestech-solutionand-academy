@@ -188,8 +188,98 @@ const OromoHistory = () => {
         </div>
       </section>
 
-      {/* Cultural Heritage */}
+      {/* Notable Oromo Leaders */}
+      <section className="bg-background">
+        <div className="container py-28">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <p className="text-accent text-sm font-medium tracking-widest uppercase mb-3">
+              {h.leadersLabel[lang]}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              {h.leadersTitle[lang]}
+            </h2>
+            <p className="text-muted-foreground leading-relaxed text-lg max-w-2xl mx-auto">
+              {h.leadersDesc[lang]}
+            </p>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {h.leaders.map((leader, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
+                className="group bg-card rounded-xl p-8 card-elevated transition-all duration-300 hover:card-elevated-hover hover:-translate-y-1"
+              >
+                <div className="flex items-start gap-5">
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0 transition-colors group-hover:bg-accent/20">
+                    <Shield size={22} className="text-accent" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-xl font-semibold text-foreground">{leader.name}</h3>
+                    <p className="text-accent text-sm font-medium mb-3">{leader.era[lang]}</p>
+                    <p className="text-muted-foreground leading-relaxed">{leader.desc[lang]}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Qubee Alphabet Section */}
       <section className="section-gradient">
+        <div className="container py-28">
+          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <p className="text-accent text-sm font-medium tracking-widest uppercase mb-3">
+                {h.qubeeLabel[lang]}
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+                {h.qubeeTitle[lang]}
+              </h2>
+              <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
+                <p>{h.qubeeP1[lang]}</p>
+                <p>{h.qubeeP2[lang]}</p>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="rounded-2xl overflow-hidden bg-card card-elevated p-10 text-center"
+            >
+              <div className="w-16 h-16 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-6">
+                <Type size={32} className="text-accent" />
+              </div>
+              <h3 className="font-heading text-2xl font-bold text-foreground mb-4">Qubee</h3>
+              <p className="text-5xl font-bold text-accent/80 tracking-[0.25em] mb-4 font-mono">
+                A B C D E
+              </p>
+              <p className="text-3xl text-muted-foreground tracking-[0.2em] mb-6 font-mono">
+                F G H I J K L
+              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {h.qubeeP3[lang]}
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cultural Heritage */}
+      <section className="bg-background">
         <div className="container py-28">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
