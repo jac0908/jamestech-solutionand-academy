@@ -13,6 +13,8 @@ import Contact from "./pages/Contact";
 import OromoHistory from "./pages/OromoHistory";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
+import AdminLogin from "./pages/AdminLogin";
+import AdminSecurity from "./pages/AdminSecurity";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
