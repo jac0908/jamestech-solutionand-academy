@@ -50,7 +50,7 @@ const Contact = () => {
               {[
                 { icon: Mail, label: c.email[lang], value: "yaikobdiriba22@gmail.com" },
                 { icon: Phone, label: c.phone[lang], value: "+251 922 067 302" },
-                { icon: MapPin, label: c.headquarters[lang], value: "Bole Road, Addis Ababa, Ethiopia" },
+                { icon: MapPin, label: c.headquarters[lang], value: "Addis Ababa, Ethiopia" },
                 { icon: Clock, label: c.businessHours[lang], value: "Mon – Fri, 8:30 AM – 5:30 PM EAT" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-4 group">
