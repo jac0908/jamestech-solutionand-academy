@@ -50,8 +50,8 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-sm font-semibold text-primary-foreground mb-5">{t.footer.connect[lang]}</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/50">
+              <li><a href="https://t.me/jacob_web123" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Telegram</a></li>
               <li className="hover:text-accent transition-colors cursor-pointer">LinkedIn</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">Telegram</li>
               <li className="hover:text-accent transition-colors cursor-pointer">GitHub</li>
             </ul>
           </div>
