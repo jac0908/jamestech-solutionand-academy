@@ -600,6 +600,138 @@ export const t = {
     privacy: { en: "Privacy Policy", am: "የግላዊነት ፖሊሲ", om: "Imaammata Iccitii" },
     terms: { en: "Terms of Service", am: "የአገልግሎት ውል", om: "Haala Tajaajilaa" },
   },
+  privacyPolicy: {
+    title: { en: "Privacy Policy", am: "የግላዊነት ፖሊሲ", om: "Imaammata Iccitii" },
+    lastUpdated: { en: "Last updated: March 8, 2026", am: "የመጨረሻ ዝማኔ: መጋቢት 8, 2026", om: "Yeroo dhumaa haaromfame: Bitootessa 8, 2026" },
+    sections: [
+      {
+        title: { en: "1. Information We Collect", am: "1. የምንሰበስበው መረጃ", om: "1. Odeeffannoo Nu Sassaabnu" },
+        content: {
+          en: "We collect information you provide directly, such as your name, email address, phone number, and company details when you contact us, request a quote, or use our services. We also collect usage data automatically through cookies and similar technologies.",
+          am: "እርስዎ በቀጥታ የሚያቀርቡልንን መረጃ እንሰበስባለን፤ ለምሳሌ ስምዎ፣ ኢሜይል አድራሻዎ፣ ስልክ ቁጥርዎ እና የኩባንያ ዝርዝሮች ሲያገኙን፣ ጥቅስ ሲጠይቁ ወይም አገልግሎታችንን ሲጠቀሙ። እንዲሁም በኩኪዎች እና ተመሳሳይ ቴክኖሎጂዎች በራስ-ሰር የአጠቃቀም ዳታ እንሰበስባለን።",
+          om: "Odeeffannoo isin kallattiin nuuf kennitan ni sassaabna, kan akka maqaa, teessoo imeelii, lakkoofsa bilbilaa fi ibsa dhaabbataa yeroo nu quunnamtan, gatii gaafattan ykn tajaajila keenya fayyadamtan. Akkasumas deetaa fayyadama kuukiiwwanii fi teeknooloojii walfakkaataadhaan ofumaan ni sassaabna.",
+        },
+      },
+      {
+        title: { en: "2. How We Use Your Information", am: "2. መረጃዎን እንዴት እንጠቀማለን", om: "2. Odeeffannoo Keessan Akkamiin Itti Fayyadamna" },
+        content: {
+          en: "We use your information to provide and improve our services, respond to inquiries, send technical notices, communicate about products, monitor usage trends, and detect security incidents.",
+          am: "መረጃዎን አገልግሎታችንን ለማቅረብ እና ለማሻሻል፣ ለጥያቄዎች ምላሽ ለመስጠት፣ ቴክኒካል ማስታወቂያዎችን ለመላክ፣ ስለ ምርቶች ለመግባባት፣ የአጠቃቀም ዝንባሌዎችን ለመከታተል እና የደህንነት ጉዳዮችን ለመለየት እንጠቀማለን።",
+          om: "Odeeffannoo keessan tajaajila keenya dhiheessuu fi fooyyessuuf, gaaffilee deebisuuf, beeksisa teeknikaalaa erguuf, waa'ee oomishaalee waliin dubbachuuf, akkaataa fayyadamaa hordofuuf fi balaa nageenyaa adda baasuuf fayyadamna.",
+        },
+      },
+      {
+        title: { en: "3. Information Sharing", am: "3. መረጃ ማጋራት", om: "3. Odeeffannoo Qooduu" },
+        content: {
+          en: "We do not sell your personal information. We may share it with trusted third-party service providers under confidentiality agreements, or disclose it when required by law.",
+          am: "የግል መረጃዎን አንሸጥም። ከታማኝ የሶስተኛ ወገን አገልግሎት ሰጪዎች ጋር በምስጢራዊነት ስምምነቶች ልንጋራ ወይም በህግ ሲጠየቅ ልንገልጸው እንችላለን።",
+          om: "Odeeffannoo dhuunfaa keessan hin gurgurru. Dhiyeessitoota tajaajilaa amanamoo waliigaltee iccitiidhaan qooduu ykn seeraan yoo gaafatame ibsuu ni dandeenya.",
+        },
+      },
+      {
+        title: { en: "4. Data Security", am: "4. የዳታ ደህንነት", om: "4. Nageenya Deetaa" },
+        content: {
+          en: "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+          am: "ያልተፈቀደ መዳረሻ፣ ለውጥ፣ ይፋ ማድረግ ወይም ውድመት ላይ የግል መረጃዎን ለመጠበቅ ተገቢ ቴክኒካል እና ድርጅታዊ የደህንነት እርምጃዎችን እንተገብራለን።",
+          om: "Odeeffannoo dhuunfaa keessan qaqqabummaa hin hayyamamne, jijjiirraa, ibsuu ykn barbadaa'uu irraa eeguuf tarkaanfiilee nageenyaa teeknikaalaa fi dhaabbilessaa sirrii ta'an ni hojiirra oolchina.",
+        },
+      },
+      {
+        title: { en: "5. Your Rights", am: "5. መብቶችዎ", om: "5. Mirga Keessan" },
+        content: {
+          en: "You have the right to access, correct, or delete your personal information. You may also object to or restrict certain processing of your data. Contact us to exercise these rights.",
+          am: "የግል መረጃዎን ማግኘት፣ ማረም ወይም መሰረዝ መብት አለዎት። እንዲሁም የተወሰኑ ዳታ ሂደቶችን መቃወም ወይም መገደብ ይችላሉ።",
+          om: "Odeeffannoo dhuunfaa keessan argachuu, sirreessuu ykn haquu mirga qabdu. Akkasumas adeemsota deetaa murtaa'an mormuuf ykn daangessuuf ni dandeessu.",
+        },
+      },
+      {
+        title: { en: "6. Cookies", am: "6. ኩኪዎች", om: "6. Kuukiiwwan" },
+        content: {
+          en: "Our website uses cookies to enhance your experience. You can control cookies through your browser settings. Disabling cookies may affect certain features.",
+          am: "ድረ-ገጻችን ተሞክሮዎን ለማሻሻል ኩኪዎችን ይጠቀማል። ኩኪዎችን በአሳሽ ቅንብሮችዎ መቆጣጠር ይችላሉ።",
+          om: "Marsariitiin keenya muuxannoo keessan fooyyessuuf kuukiiwwan fayyadama. Kuukiiwwan too'annoo geeggeessituu keessaniin to'achuu dandeessu.",
+        },
+      },
+      {
+        title: { en: "7. Contact Us", am: "7. ያግኙን", om: "7. Nu Quunnamaa" },
+        content: {
+          en: "If you have questions about this Privacy Policy, contact us at: James Tech Solution, Addis Ababa, Ethiopia — info@jamestechsolution.com",
+          am: "ስለዚህ የግላዊነት ፖሊሲ ጥያቄ ካለዎት ያግኙን: James Tech Solution, አዲስ አበባ, ኢትዮጵያ — info@jamestechsolution.com",
+          om: "Imaammata Iccitii kana ilaalchisee gaaffii yoo qabaattan nu quunnamaa: James Tech Solution, Finfinnee, Itoophiyaa — info@jamestechsolution.com",
+        },
+      },
+    ],
+  },
+  termsOfService: {
+    title: { en: "Terms of Service", am: "የአገልግሎት ውል", om: "Haala Tajaajilaa" },
+    lastUpdated: { en: "Last updated: March 8, 2026", am: "የመጨረሻ ዝማኔ: መጋቢት 8, 2026", om: "Yeroo dhumaa haaromfame: Bitootessa 8, 2026" },
+    sections: [
+      {
+        title: { en: "1. Acceptance of Terms", am: "1. ውሎችን መቀበል", om: "1. Haala Fudhachuu" },
+        content: {
+          en: "By accessing and using the services provided by James Tech Solution, you agree to be bound by these Terms of Service. If you do not agree, please do not use our services.",
+          am: "James Tech Solution የሚሰጣቸውን አገልግሎቶች በመጠቀም በእነዚህ የአገልግሎት ውሎች ለመገደድ ይስማማሉ። ካልተስማሙ እባክዎ አገልግሎታችንን አይጠቀሙ።",
+          om: "Tajaajila James Tech Solution fayyadamuudhaan Haala Tajaajilaa kanaan daangeffamuu irratti walii galtu. Yoo walii hin galle, maaloo tajaajila keenya hin fayyadaminaa.",
+        },
+      },
+      {
+        title: { en: "2. Services", am: "2. አገልግሎቶች", om: "2. Tajaajilota" },
+        content: {
+          en: "James Tech Solution provides software development, cloud solutions, data analytics, consulting, and related technology services. Specific scope and deliverables will be outlined in separate service agreements.",
+          am: "James Tech Solution የሶፍትዌር ልማት፣ ክላውድ መፍትሔዎች፣ ዳታ ትንተና፣ ማማከር እና ተዛማጅ ቴክኖሎጂ አገልግሎቶችን ይሰጣል።",
+          om: "James Tech Solution misoomaa sooftweerii, furmaata kilaawudii, xiinxala deetaa, gorsaa fi tajaajilota teeknooloojii walqabatan ni dhiheessa.",
+        },
+      },
+      {
+        title: { en: "3. Client Responsibilities", am: "3. የደንበኛ ኃላፊነቶች", om: "3. Itti Gaafatamummaa Maamiltootaa" },
+        content: {
+          en: "You agree to provide accurate information, cooperate with our team, ensure you have rights to content you provide, and use our services only for lawful purposes.",
+          am: "ትክክለኛ መረጃ ለማቅረብ፣ ከቡድናችን ጋር ለመተባበር፣ ለሚያቀርቡት ይዘት መብቶች እንዳለዎት ለማረጋገጥ እና አገልግሎታችንን ለህጋዊ ዓላማዎች ብቻ ለመጠቀም ይስማማሉ።",
+          om: "Odeeffannoo sirrii kennuuf, garee keenya waliin hojjechuuf, qabiyyee kennitan irratti mirga qabaachuu mirkaneessuuf fi tajaajila keenya kaayyoo seera qabeessa qofaaf fayyadamuuf walii galtu.",
+        },
+      },
+      {
+        title: { en: "4. Intellectual Property", am: "4. አእምሯዊ ንብረት", om: "4. Qabeenya Sammuu" },
+        content: {
+          en: "Unless otherwise agreed, all intellectual property rights in deliverables transfer to the client upon full payment. We retain the right to use general knowledge and experience gained.",
+          am: "ካልተስማሙ በስተቀር ሁሉም የአእምሯዊ ንብረት መብቶች ሙሉ ክፍያ ሲፈጸም ወደ ደንበኛው ይተላለፋሉ።",
+          om: "Yoo addaan hin waliigalamin, mirgi qabeenya sammuu waan dhihaatan hundi kaffaltii guutuu irratti gara maamiltichatti darba.",
+        },
+      },
+      {
+        title: { en: "5. Payment Terms", am: "5. የክፍያ ውሎች", om: "5. Haala Kaffaltii" },
+        content: {
+          en: "Payment terms will be specified in the applicable service agreement. Unless otherwise stated, invoices are due within 30 days. Late payments may incur additional charges.",
+          am: "የክፍያ ውሎች በሚመለከተው የአገልግሎት ስምምነት ይገለጻሉ። ካልተገለጸ በስተቀር ክፍያዎች በ30 ቀናት ውስጥ ይከፈላሉ።",
+          om: "Haalawwan kaffaltii waliigaltee tajaajilaa hojiirra oolu keessatti ibsamu. Yoo addaan hin ibsamin, herregni guyyaa 30 keessatti kaffalamuu qaba.",
+        },
+      },
+      {
+        title: { en: "6. Limitation of Liability", am: "6. የተጠያቂነት ገደብ", om: "6. Daangaa Itti Gaafatamummaa" },
+        content: {
+          en: "James Tech Solution shall not be liable for indirect, incidental, or consequential damages. Our total liability shall not exceed the amount paid for the specific service giving rise to the claim.",
+          am: "James Tech Solution ለተዘዋዋሪ፣ ለአጋጣሚ ወይም ለተከታይ ጉዳቶች ተጠያቂ አይሆንም። ጠቅላላ ተጠያቂነታችን ለጥያቄው ምክንያት ለሆነው ልዩ አገልግሎት ከተከፈለው መጠን አይበልጥም።",
+          om: "James Tech Solution miidhaa al-kallattii, tasaa ykn bu'aatiif itti hin gaafatamu. Waliigalatti itti gaafatamummaan keenya gatii tajaajila murtaa'aa himataaf sababa ta'eef kaffalame hin caalu.",
+        },
+      },
+      {
+        title: { en: "7. Governing Law", am: "7. ገዢ ህግ", om: "7. Seera Bulchaa" },
+        content: {
+          en: "These Terms shall be governed by the laws of the Federal Democratic Republic of Ethiopia. Disputes shall be resolved through arbitration in Addis Ababa.",
+          am: "እነዚህ ውሎች በፌዴራል ዲሞክራቲክ ሪፐብሊክ ኢትዮጵያ ህጎች ይተዳደራሉ። አለመግባባቶች በአዲስ አበባ በግልግል ይፈታሉ።",
+          om: "Haalawwan kun seera Rippaablikii Dimokiraatawaa Federaalawaa Itoophiyaatiin bulchamu. Waldhabdeen jaarsoliin Finfinneetti ni furamu.",
+        },
+      },
+      {
+        title: { en: "8. Contact Us", am: "8. ያግኙን", om: "8. Nu Quunnamaa" },
+        content: {
+          en: "For questions about these Terms, contact: James Tech Solution, Addis Ababa, Ethiopia — info@jamestechsolution.com",
+          am: "ስለእነዚህ ውሎች ጥያቄ ካለዎት ያግኙን: James Tech Solution, አዲስ አበባ, ኢትዮጵያ — info@jamestechsolution.com",
+          om: "Haala kana ilaalchisee gaaffii yoo qabaattan: James Tech Solution, Finfinnee, Itoophiyaa — info@jamestechsolution.com",
+        },
+      },
+    ],
+  },
   oromoHistory: {
     badge: { en: "Heritage & Culture", am: "ቅርስ እና ባህል", om: "Aadaa fi Duudhaa" },
     title1: { en: "The Rich History of the", am: "የኦሮሞ ህዝብ", om: "Seenaa Badhaadhaa" },
