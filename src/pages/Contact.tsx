@@ -150,6 +150,14 @@ const Contact = () => {
                 <button type="submit" className="group w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground transition-all hover:bg-accent/90 glow-accent">
                   {c.sendButton[lang]} <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
                 </button>
+                {/* Honeypot - hidden from humans, bots fill it */}
+                <input
+                  type="text"
+                  name="website_url"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0 }}
+                />
                 <p className="text-xs text-muted-foreground text-center">{c.privacy[lang]}</p>
               </form>
             )}
