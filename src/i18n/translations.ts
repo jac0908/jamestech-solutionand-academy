@@ -230,7 +230,7 @@ export const t = {
       om: "Itoophiyaanota of boonnuudha, waajjira Finfinnee, Hawaasaa, Baahir Daar fi Adaamaa keessatti qabna. Gareen keenya injinaroota, dizaayinaroota fi tarsiimoota 150+ fuula duraa dijitaalaa Itoophiyaatiif kutannoo qabu.",
     },
     leadership: { en: "Leadership", am: "አመራር", om: "Hogganaa" },
-    leadershipTitle: { en: "The team behind NexusTech Ethiopia", am: "ከNexusTech Ethiopia ጀርባ ያለው ቡድን", om: "Garee NexusTech Ethiopia duuba jiru" },
+    leadershipTitle: { en: "The team behind James Tech Solution", am: "ከJames Tech Solution ጀርባ ያለው ቡድን", om: "Garee James Tech Solution duuba jiru" },
     team: [
       {
         name: "Dawit Mengistu",
