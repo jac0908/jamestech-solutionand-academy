@@ -36,6 +36,8 @@ const App = () => (
             <Route path="/oromo-history" element={<OromoHistory />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/admin/security" element={<AdminSecurity />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
