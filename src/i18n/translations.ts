@@ -215,9 +215,9 @@ export const t = {
     story: { en: "Our Story", am: "ታሪካችን", om: "Seenaa Keenya" },
     storyTitle: { en: "From startup to national partner", am: "ከጅምር ወደ ሀገራዊ አጋር", om: "Jalqabbii irraa gara michuu biyyaalessaatti" },
     storyP1: {
-      en: "NexusTech Ethiopia was born from a simple observation: Ethiopian businesses deserved world-class technology solutions built for local needs. Our founders, experienced engineers and entrepreneurs, saw an opportunity to bridge the gap between global tech and Ethiopian business requirements.",
-      am: "NexusTech Ethiopia ከቀላል ምልከታ ተወለደ፡ የኢትዮጵያ ንግዶች ለአካባቢው ፍላጎቶች የተገነቡ ዓለም አቀፍ ቴክኖሎጂ መፍትሔዎች ይገባቸዋል። መስራቾቻችን ልምድ ያላቸው መሃንዲሶች እና ስራ ፈጣሪዎች ዓለም አቀፍ ቴክ እና የኢትዮጵያ ንግድ መስፈርቶችን ለማገናኘት ዕድሉን ተመልክተዋል።",
-      om: "NexusTech Ethiopia hubannoo salphaa irraa dhalate: daldalli Itoophiyaa furmaata teeknooloojii sadarkaa addunyaa fedhii naannootiif ijaarame ni barbaada. Hundeessitoonni keenya injinaroota fi daldaltootni muuxannoo qaban carraa teeknooloojii addunyaa fi fedhii daldalaa Itoophiyaa walitti fiduuf argan.",
+      en: "James Tech Solution was born from a simple observation: Ethiopian businesses deserved world-class technology solutions built for local needs. Our founders, experienced engineers and entrepreneurs, saw an opportunity to bridge the gap between global tech and Ethiopian business requirements.",
+      am: "James Tech Solution ከቀላል ምልከታ ተወለደ፡ የኢትዮጵያ ንግዶች ለአካባቢው ፍላጎቶች የተገነቡ ዓለም አቀፍ ቴክኖሎጂ መፍትሔዎች ይገባቸዋል። መስራቾቻችን ልምድ ያላቸው መሃንዲሶች እና ስራ ፈጣሪዎች ዓለም አቀፍ ቴክ እና የኢትዮጵያ ንግድ መስፈርቶችን ለማገናኘት ዕድሉን ተመልክተዋል።",
+      om: "James Tech Solution hubannoo salphaa irraa dhalate: daldalli Itoophiyaa furmaata teeknooloojii sadarkaa addunyaa fedhii naannootiif ijaarame ni barbaada. Hundeessitoonni keenya injinaroota fi daldaltootni muuxannoo qaban carraa teeknooloojii addunyaa fi fedhii daldalaa Itoophiyaa walitti fiduuf argan.",
     },
     storyP2: {
       en: "Today we serve over 200 organizations across Ethiopia, from banks and telecoms to government agencies and growing startups. Our platform processes over 5 million transactions daily, and we maintain a 99.9% uptime SLA.",
