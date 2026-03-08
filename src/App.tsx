@@ -29,6 +29,7 @@ const App = () => (
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/oromo-history" element={<OromoHistory />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

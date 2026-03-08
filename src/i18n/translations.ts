@@ -600,4 +600,115 @@ export const t = {
     privacy: { en: "Privacy Policy", am: "የግላዊነት ፖሊሲ", om: "Imaammata Iccitii" },
     terms: { en: "Terms of Service", am: "የአገልግሎት ውል", om: "Haala Tajaajilaa" },
   },
+  oromoHistory: {
+    badge: { en: "Heritage & Culture", am: "ቅርስ እና ባህል", om: "Aadaa fi Duudhaa" },
+    title1: { en: "The Rich History of the", am: "የኦሮሞ ህዝብ", om: "Seenaa Badhaadhaa" },
+    title2: { en: "Oromo People", am: "ታላቅ ታሪክ", om: "Ummata Oromoo" },
+    desc: {
+      en: "Explore the fascinating history, culture, and traditions of the Oromo people — one of the largest ethnic groups in Africa with a rich heritage spanning thousands of years.",
+      am: "የኦሮሞ ህዝብ አስደናቂ ታሪክ፣ ባህል እና ወጎች ያስሱ — ከአፍሪካ ትልልቅ ብሄረሰቦች አንዱ ሲሆን በሺዎች ዓመታት የሚቆጠር ሀብታም ቅርስ ያለው ነው።",
+      om: "Seenaa, aadaa fi duudhaa ummata Oromoo — gosa sanyii guddaa Afriikaa keessaa tokko kan duudhaa badhaadhinaan waggaa kumaatamaaf turu qabu — qoradhaa.",
+    },
+    introLabel: { en: "Overview", am: "አጠቃላይ እይታ", om: "Waliigala" },
+    introTitle: { en: "Who Are the Oromo People?", am: "የኦሮሞ ህዝብ ማን ነው?", om: "Ummanni Oromoo Eenyu?" },
+    introP1: {
+      en: "The Oromo are a Cushitic-speaking people native to the Horn of Africa, primarily inhabiting Ethiopia. They are the largest ethnic group in Ethiopia and one of the largest in Africa, with a population of over 40 million. The Oromo have a rich cultural heritage that includes the Gadaa system of governance, vibrant oral traditions, and deep connections to the land.",
+      am: "ኦሮሞዎች በአፍሪካ ቀንድ ውስጥ በዋነኝነት ኢትዮጵያን የሚኖሩ የኩሻዊ ቋንቋ ተናጋሪ ህዝብ ናቸው። በኢትዮጵያ ውስጥ ትልቁ ብሄረሰብ ሲሆኑ ከ40 ሚሊዮን በላይ ህዝብ አላቸው። ኦሮሞዎች የገዳ ስርዓት፣ ህያው የአፍ ወግ እና ከመሬት ጋር ጥልቅ ትስስርን ያካተተ ሀብታም ባህላዊ ቅርስ አላቸው።",
+      om: "Oromoon ummata afaan Kuush dubbatu kan Gaanfa Afriikaa keessumaa Itoophiyaa jiraatudha. Gosa sanyii guddicha Itoophiyaa keessaa fi kan Afriikaa keessaa isa guddaa tokko yoo ta'u, baay'inni ummata isaa miliyoona 40 ol ta'a. Oromoon sirna bulchiinsa Gadaa, aadaa afaanii badhaadhinaa fi walitti dhufeenya lafa waliin gadi fagoo qabu hammatu qabu.",
+    },
+    introP2: {
+      en: "Historically, the Oromo people have been pastoralists, farmers, and traders, with a deep spiritual connection to Waaqa (God) and nature. Their language, Afaan Oromoo, is the most widely spoken Cushitic language in the world and serves as a unifying force among the diverse Oromo clans.",
+      am: "በታሪክ ኦሮሞዎች ከዋቃ (እግዚአብሄር) እና ከተፈጥሮ ጋር ጥልቅ መንፈሳዊ ትስስር ያላቸው አርብቶ አደሮች፣ ገበሬዎች እና ነጋዴዎች ነበሩ። ቋንቋቸው አፋን ኦሮሞ በዓለም ላይ በስፋት የሚነገር የኩሻዊ ቋንቋ ሲሆን በተለያዩ የኦሮሞ ጎሳዎች መካከል አንድ የሚያደርግ ኃይል ነው።",
+      om: "Seenaa keessatti ummanni Oromoo horsiisee bultoota, qonnaan bultoota fi daldaltoota ta'uun Waaqa fi uumamaa waliin hariiroo ruuhii gadi fagoo qabu. Afaan isaanii, Afaan Oromoo, afaan Kuush addunyaa irratti bal'inaan dubbatamu yoo ta'u, gosota Oromoo garaa garaa gidduutti humna tokkoomsaa ta'ee tajaajila.",
+    },
+    timelineLabel: { en: "Historical Journey", am: "ታሪካዊ ጉዞ", om: "Adeemsa Seenaa" },
+    timelineTitle: { en: "Key Periods in Oromo History", am: "በኦሮሞ ታሪክ ውስጥ ዋና ዋና ወቅቶች", om: "Yeroo Murteessaa Seenaa Oromoo Keessatti" },
+    sections: [
+      {
+        title: { en: "Ancient Origins", am: "ጥንታዊ አመጣጥ", om: "Madda Durii" },
+        content: {
+          en: "The Oromo people trace their origins to the ancient Cushitic civilizations of Northeast Africa. Archaeological evidence suggests continuous habitation in the Horn of Africa for thousands of years, with distinct cultural practices and social structures developing over millennia.",
+          am: "የኦሮሞ ህዝብ አመጣጡን ከሰሜን ምስራቅ አፍሪካ ጥንታዊ የኩሻዊ ስልጣኔዎች ያገኛል። የአርኪኦሎጂ ማስረጃዎች በአፍሪካ ቀንድ ውስጥ ለሺዎች ዓመታት ቀጣይ መኖሪያን ያመላክታሉ።",
+          om: "Ummanni Oromoo madda isaanii sivilaayizeeshinii Kuush durii Afriikaa Kaaba Bahaa irraa maddu. Ragaaleen arkiyooloojii Gaanfa Afriikaa keessatti waggaa kumaatamaaf walitti fufiinsaan jiraachuu agarsiisu.",
+        },
+      },
+      {
+        title: { en: "The Gadaa System (Pre-16th Century)", am: "የገዳ ስርዓት (ከ16ኛው ክፍለ ዘመን በፊት)", om: "Sirna Gadaa (Jaarraa 16ffaa Dura)" },
+        content: {
+          en: "The Gadaa system is a traditional system of governance that has regulated the political, economic, social, and religious life of the Oromo people for centuries. It is a democratic system where leaders are elected every eight years, making it one of the oldest democratic traditions in the world. UNESCO inscribed it as an Intangible Cultural Heritage of Humanity in 2016.",
+          am: "የገዳ ስርዓት ለዘመናት የኦሮሞ ህዝብ ፖለቲካዊ፣ ኢኮኖሚያዊ፣ ማህበራዊ እና ሃይማኖታዊ ህይወትን የሚቆጣጠር ባህላዊ የአስተዳደር ስርዓት ነው። መሪዎች በየ8 ዓመቱ የሚመረጡበት ዴሞክራሲያዊ ስርዓት ነው።",
+          om: "Sirni Gadaa sirna bulchiinsa aadaa jireenya siyaasaa, dinagdee, hawaasummaa fi amantii ummata Oromoo jaarraa hedduuf to'ataa ture. Sirna dimokiraasii kan hogganoonni waggaa saddeet saddeetiin filataman yoo ta'u, aadaa dimokiraasii addunyaa irratti durii keessaa isa tokko. UNESCOn bara 2016 Duudhaa Aadaa Hin-tuqamne Dhala Namaatti galmeesse.",
+        },
+      },
+      {
+        title: { en: "The Oromo Expansion (16th Century)", am: "የኦሮሞ መስፋፋት (16ኛው ክፍለ ዘመን)", om: "Babal'ina Oromoo (Jaarraa 16ffaa)" },
+        content: {
+          en: "During the 16th century, the Oromo people underwent a significant expansion across the Horn of Africa. This movement, sometimes called the 'Oromo migrations,' saw the Oromo people settle in vast new territories, establishing their cultural and political presence across what is now central and southern Ethiopia, as well as parts of Kenya.",
+          am: "በ16ኛው ክፍለ ዘመን የኦሮሞ ህዝብ በአፍሪካ ቀንድ ውስጥ ከፍተኛ መስፋፋት አካሄደ። ይህ እንቅስቃሴ ኦሮሞዎች በሰፊ አዲስ ግዛቶች ውስጥ እንዲሰፍሩ አድርጓል።",
+          om: "Jaarraa 16ffaa keessatti ummanni Oromoo Gaanfa Afriikaa keessatti babal'ina guddaa raawwate. Sochiin kun ummanni Oromoo naannoo haaraa bal'aa keessatti akka qubatan taasise.",
+        },
+      },
+      {
+        title: { en: "Resistance & Resilience (19th-20th Century)", am: "ተቃውሞ እና ጽናት (19ኛ-20ኛ ክፍለ ዘመን)", om: "Mormii fi Cimina (Jaarraa 19-20ffaa)" },
+        content: {
+          en: "The Oromo faced significant challenges during the imperial expansion of the Ethiopian Empire under Emperor Menelik II in the late 19th century. Despite losing political autonomy, the Oromo maintained their cultural identity, language, and traditions. Throughout the 20th century, various Oromo movements emerged seeking self-determination and cultural rights.",
+          am: "ኦሮሞዎች በ19ኛው ክፍለ ዘመን መጨረሻ በንጉስ ምኒልክ 2ኛ ዘመነ መንግስት ከፍተኛ ፈተናዎች ገጠሟቸው። ፖለቲካዊ ራስ ገዝነትን ቢያጡም ባህላዊ ማንነታቸውን፣ ቋንቋቸውን እና ወጋቸውን ጠብቀዋል።",
+          om: "Oromoon jaarraa 19ffaa dhuma irratti babal'ina Impaayera Itoophiyaa Mootii Minilik 2ffaa jalatti rakkoo guddaa mudatan. Birmadummaa siyaasaa dhabaniillee, eenyummaa aadaa, afaan fi aadaa isaanii eegan.",
+        },
+      },
+      {
+        title: { en: "Modern Era & Cultural Revival", am: "ዘመናዊ ዘመን እና ባህላዊ ትንሣኤ", om: "Bara Ammaa fi Haaromsa Aadaa" },
+        content: {
+          en: "Today, the Oromo people are experiencing a cultural renaissance. Afaan Oromoo has become the official working language of the Oromia Regional State, Oromo music and art flourish globally, and there is growing pride in Oromo identity. The election of Abiy Ahmed (of Oromo heritage) as Prime Minister of Ethiopia in 2018 marked a historic moment.",
+          am: "ዛሬ የኦሮሞ ህዝብ ባህላዊ ትንሣኤ እያሳየ ነው። አፋን ኦሮሞ የኦሮሚያ ክልል ርስመ መንግስት ኦፊሴላዊ የስራ ቋንቋ ሆኗል፣ የኦሮሞ ሙዚቃ እና ስነ-ጥበብ በዓለም ዙሪያ እያበበ ነው።",
+          om: "Har'a ummanni Oromoo haaromsa aadaa mulataa jiru. Afaan Oromoo afaan hojii mootummaa naannoo Oromiyaa ta'eera, muuziqaa fi aartiin Oromoo addunyaa irratti dagaagaa jiru, akkasumas eenyummaa Oromootiin boonuun guddachaa jira.",
+        },
+      },
+    ],
+    gadaaLabel: { en: "Democratic Heritage", am: "ዴሞክራሲያዊ ቅርስ", om: "Duudhaa Dimokiraasii" },
+    gadaaTitle: { en: "The Gadaa System: Africa's Oldest Democracy", am: "የገዳ ስርዓት: የአፍሪካ እጅግ ጥንታዊ ዴሞክራሲ", om: "Sirna Gadaa: Dimokiraasii Durii Afriikaa" },
+    gadaaP1: {
+      en: "The Gadaa system is an indigenous democratic socio-political system of the Oromo people. It organizes society into age-grade classes (Gadaa grades) that rotate power every eight years, ensuring no single leader or group holds authority indefinitely.",
+      am: "የገዳ ስርዓት የኦሮሞ ህዝብ ልዩ ዴሞክራሲያዊ ማህበረ-ፖለቲካዊ ስርዓት ነው። ማህበረሰቡን በየ8 ዓመቱ ስልጣን በሚለዋወጡ የዕድሜ ደረጃ ክፍሎች ያደራጃል።",
+      om: "Sirni Gadaa sirna hawaas-siyaasaa dimokiraatawaa uummataa ummata Oromoo ti. Hawaasa sadarkaa umurii (sadarkaa Gadaa) waggaa saddeet saddeetiin aangomsiisuun qindeessa.",
+    },
+    gadaaP2: {
+      en: "Under the Gadaa system, Oromo society had checks and balances, rule of law, and peaceful transfer of power — principles that many modern democracies aspire to. The system governed everything from conflict resolution and resource management to marriage laws and religious ceremonies.",
+      am: "በገዳ ስርዓት ስር የኦሮሞ ማህበረሰብ ቁጥጥር እና ሚዛን፣ የህግ የበላይነት እና ሰላማዊ የስልጣን ሽግግር ነበረው — ብዙ ዘመናዊ ዴሞክራሲዎች የሚመኟቸው መርሆዎች።",
+      om: "Sirna Gadaa jalatti hawaasni Oromoo to'annoo fi madaala, seeraan bulmaata, fi dabarsaa aangoo nagaatiin — qajeelfamoota dimokiraasiin ammaa hedduun hawwan — qabu ture.",
+    },
+    gadaaP3: {
+      en: "UNESCO recognized the Gadaa system as an Intangible Cultural Heritage of Humanity in 2016, acknowledging its exceptional value to world heritage and its enduring relevance as a model of democratic governance.",
+      am: "UNESCO በ2016 የገዳ ስርዓትን እንደ ለሰው ልጅ ዋጋ ያለው ባህላዊ ቅርስ እውቅና ሰጥቷል — ለዓለም ቅርስ ልዩ ዋጋው እና እንደ ዴሞክራሲያዊ አስተዳደር ሞዴል ቀጣይ ጠቀሜታውን በመቀበል።",
+      om: "UNESCOn bara 2016 Sirna Gadaa Duudhaa Aadaa Hin-tuqamne Dhala Namaatti beekamtii kenneera — gatii addaa duudhaa addunyaatiif qabu fi akka moodeela bulchiinsa dimokiraasii ta'ee barbaachisummaa isaa itti fufiinsa qabu fudhatee.",
+    },
+    cultureLabel: { en: "Living Heritage", am: "ህያው ቅርስ", om: "Duudhaa Jiraataa" },
+    cultureTitle: { en: "Oromo Cultural Treasures", am: "የኦሮሞ ባህላዊ ሀብቶች", om: "Badhaadhina Aadaa Oromoo" },
+    cultureItems: [
+      {
+        title: { en: "Music & Oral Traditions", am: "ሙዚቃ እና የአፍ ወግ", om: "Muuziqaa fi Aadaa Afaanii" },
+        desc: {
+          en: "Oromo music features unique instruments and poetic traditions. Geerarsa (war chants), Weedduu (love songs), and Faaruu (praise songs) form a rich oral literary tradition passed through generations.",
+          am: "የኦሮሞ ሙዚቃ ልዩ መሳሪያዎችን እና ግጥማዊ ወጎችን ያሳያል። ገረርሳ፣ ዌዱ እና ፋሩ ከትውልድ ወደ ትውልድ የሚተላለፍ ሀብታም የአፍ ስነ-ጽሁፍ ወግ ይፈጥራሉ።",
+          om: "Muuziqaan Oromoo meeshaalee addaa fi aadaa walaloo of keessatti qaba. Geerarsi, Weedduu fi Faaruun aadaa ogbarruu afaanii badhaadhaa dhaloota irraa dhalootatti darbu uumu.",
+        },
+      },
+      {
+        title: { en: "Irreecha Festival", am: "ኢሬቻ ፌስቲቫል", om: "Ayyaana Irreechaa" },
+        desc: {
+          en: "Irreecha is the annual Oromo thanksgiving festival celebrated at the end of the rainy season. Millions gather at Lake Hora Arsadi in Bishoftu to give thanks to Waaqa (God) for peace, fertility, and abundance.",
+          am: "ኢሬቻ በየዓመቱ በክረምት ወቅት መጨረሻ ላይ የሚከበር የኦሮሞ የምስጋና በዓል ነው። ሚሊዮኖች ለሰላም፣ ለመራባት እና ለብዛት ለዋቃ ምስጋና ለማቅረብ ብሹፍቱ ሖራ አርሳዲ ሀይቅ ላይ ይሰበሰባሉ።",
+          om: "Irreechaan ayyaana galateeffannaa Oromoo kan waggaa waggaan dhuma roobaa irratti kabajamu dha. Miliyoonni Hora Arsadii Bishooftuutti nagaa, hormaata fi badhaadhinaaf Waaqa galateeffachuuf walitti qabu.",
+        },
+      },
+      {
+        title: { en: "Social Unity & Kinship", am: "ማህበራዊ አንድነት", om: "Tokkummaa Hawaasaa" },
+        desc: {
+          en: "The Oromo value communal living through systems like Daadhii (communal labor), Guza (mutual aid), and Jigi (collective work). These practices strengthen social bonds and ensure community welfare across generations.",
+          am: "ኦሮሞዎች እንደ ዳዲ፣ ጉዛ እና ጂጊ ባሉ ስርዓቶች በኩል የጋራ ኑሮን ከፍ አድርገው ይመለከታሉ። እነዚህ ልምዶች ማህበራዊ ትስስርን ያጠናክራሉ።",
+          om: "Oromoon jireenya hawaasaa sirnoota akka Daadhii, Guzaa fi Jigii faa'idaa irraa fayyadamu. Shaakalonni kun hidhata hawaasummaa cimsu fi faayidaa hawaasaa dhaloota hunda mirkaneessu.",
+        },
+      },
+    ],
+  },
 } as const;

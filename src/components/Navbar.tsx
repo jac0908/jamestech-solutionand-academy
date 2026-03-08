@@ -20,6 +20,7 @@ const Navbar = () => {
     { label: t.nav.pricing[lang], to: "/pricing" },
     { label: t.nav.portfolio[lang], to: "/portfolio" },
     { label: t.nav.contact[lang], to: "/contact" },
+    { label: t.nav.oromoHistory[lang], to: "/oromo-history" },
   ];
 
   useEffect(() => {
