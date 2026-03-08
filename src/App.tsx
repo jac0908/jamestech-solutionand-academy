@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import OromoHistory from "./pages/OromoHistory";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
