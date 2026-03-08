@@ -12,6 +12,7 @@ export const t = {
     about: { en: "About", am: "ስለ እኛ", om: "Waa'ee Keenya" },
     services: { en: "Services", am: "አገልግሎቶች", om: "Tajaajila" },
     pricing: { en: "Pricing", am: "ዋጋ", om: "Gatii" },
+    portfolio: { en: "Portfolio", am: "ፖርትፎሊዮ", om: "Poortfooliyoo" },
     contact: { en: "Contact", am: "ያግኙን", om: "Nu Quunnamaa" },
     getStarted: { en: "Get Started", am: "ይጀምሩ", om: "Jalqabaa" },
   },
