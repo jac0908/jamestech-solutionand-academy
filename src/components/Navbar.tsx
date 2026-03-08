@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
 import LanguageSwitcher from "./LanguageSwitcher";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
@@ -36,10 +37,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-18 py-4">
-        <Link to="/" className="font-heading text-xl font-bold tracking-tight">
-          <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>James</span>
-          <span className="text-accent">Tech</span>
-          <span className={`text-xs ml-1 font-normal ${scrolled ? "text-muted-foreground" : "text-primary-foreground/50"}`}>Solution</span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="JamesTech Logo" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop */}

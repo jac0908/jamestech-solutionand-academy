@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { lang } = useLanguage();
@@ -13,9 +14,8 @@ const Footer = () => {
       <div className="relative container py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
-            <Link to="/" className="font-heading text-xl font-bold tracking-tight text-primary-foreground">
-              James<span className="text-accent">Tech</span>
-              <span className="text-xs ml-1 font-normal text-primary-foreground/50">Solution</span>
+            <Link to="/" className="flex items-center gap-2">
+              <img src={logo} alt="JamesTech Logo" className="h-12 w-auto" />
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/50 leading-relaxed max-w-xs">
               {t.footer.desc[lang]}
