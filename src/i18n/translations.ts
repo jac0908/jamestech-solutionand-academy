@@ -145,9 +145,9 @@ export const t = {
     title1: { en: "Building the future of", am: "የኢትዮጵያ", om: "Gara fuula duraa" },
     title2: { en: "Ethiopian technology", am: "ቴክኖሎጂ ወደፊት", om: "teeknooloojii Itoophiyaa" },
     desc: {
-      en: "Founded in 2014, NexusTech Ethiopia has grown from a small Addis Ababa startup into a trusted technology partner for over 200 organizations across the country.",
-      am: "በ2014 የተመሰረተው NexusTech Ethiopia ከትንሽ የአዲስ አበባ ጅምር ወደ 200 በላይ ድርጅቶች ታማኝ የቴክኖሎጂ አጋር ሆኗል።",
-      om: "Bara 2014 kan hundeeffame NexusTech Ethiopia jalqabbii xixiqqaa Finfinnee irraa gara michuu teeknooloojii amanamaa dhaabbilee 200 ol ta'eera.",
+      en: "Founded in 2014, James Tech Solution has grown from a small Addis Ababa startup into a trusted technology partner for over 200 organizations across the country.",
+      am: "በ2014 የተመሰረተው James Tech Solution ከትንሽ የአዲስ አበባ ጅምር ወደ 200 በላይ ድርጅቶች ታማኝ የቴክኖሎጂ አጋር ሆኗል።",
+      om: "Bara 2014 kan hundeeffame James Tech Solution jalqabbii xixiqqaa Finfinnee irraa gara michuu teeknooloojii amanamaa dhaabbilee 200 ol ta'eera.",
     },
     statsYears: { en: "Years of Excellence", am: "የላቀ ዓመታት", om: "Waggaa Gaarii" },
     statsGrowth: { en: "Revenue Growth YoY", am: "ዓመታዊ ገቢ ዕድገት", om: "Guddina Galii Waggaa" },
