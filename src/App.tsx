@@ -39,6 +39,7 @@ const App = () => (
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin/security" element={<AdminSecurity />} />
+            <Route path="/admin/profile" element={<AdminProfile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
