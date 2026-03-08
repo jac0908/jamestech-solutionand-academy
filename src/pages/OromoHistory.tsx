@@ -4,15 +4,6 @@ import { BookOpen, Globe, Users, Crown, Sword, Landmark, Music, Leaf, Scale, Sta
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.1, duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-  }),
-};
-
 const sectionIcons = [Crown, Globe, Scale, Sword, Landmark, Users, Music, Leaf, Star, BookOpen];
 
 const OromoHistory = () => {
@@ -31,7 +22,7 @@ const OromoHistory = () => {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.6 }}
             className="max-w-3xl mx-auto text-center"
           >
             <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 mb-6">
@@ -96,11 +87,10 @@ const OromoHistory = () => {
               return (
                 <motion.div
                   key={i}
-                  custom={i}
-                  variants={fadeUp}
-                  initial="hidden"
-                  whileInView="visible"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
+                  transition={{ delay: i * 0.1, duration: 0.6 }}
                   className="group bg-card rounded-xl p-8 card-elevated transition-all duration-300 hover:card-elevated-hover hover:-translate-y-1"
                 >
                   <div className="flex items-start gap-5">
@@ -166,11 +156,10 @@ const OromoHistory = () => {
             {h.cultureItems.map((item, i) => (
               <motion.div
                 key={i}
-                custom={i}
-                variants={fadeUp}
-                initial="hidden"
-                whileInView="visible"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                transition={{ delay: i * 0.1, duration: 0.5 }}
                 className="bg-card rounded-xl p-8 card-elevated text-center transition-all duration-300 hover:card-elevated-hover hover:-translate-y-1"
               >
                 <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mx-auto mb-5">
