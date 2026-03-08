@@ -17,6 +17,7 @@ const Navbar = () => {
     { label: t.nav.about[lang], to: "/about" },
     { label: t.nav.services[lang], to: "/services" },
     { label: t.nav.pricing[lang], to: "/pricing" },
+    { label: t.nav.portfolio[lang], to: "/portfolio" },
     { label: t.nav.contact[lang], to: "/contact" },
   ];
 
