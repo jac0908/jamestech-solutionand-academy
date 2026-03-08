@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
 import LanguageSwitcher from "./LanguageSwitcher";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const location = useLocation();
