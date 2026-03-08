@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
-import { BookOpen, Globe, Users, Crown, Sword, Landmark, Music, Leaf, Scale, Star } from "lucide-react";
+import { BookOpen, Globe, Users, Crown, Sword, Landmark, Music, Leaf, Scale, Star, Shield, PenTool, Type } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
 import oromiaLandscape from "@/assets/oromo/oromia-landscape.jpg";
