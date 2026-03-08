@@ -35,9 +35,9 @@ const Navbar = () => {
     >
       <div className="container flex items-center justify-between h-18 py-4">
         <Link to="/" className="font-heading text-xl font-bold tracking-tight">
-          <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>Nexus</span>
+          <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>James</span>
           <span className="text-accent">Tech</span>
-          <span className={`text-xs ml-1 font-normal ${scrolled ? "text-muted-foreground" : "text-primary-foreground/50"}`}>Ethiopia</span>
+          <span className={`text-xs ml-1 font-normal ${scrolled ? "text-muted-foreground" : "text-primary-foreground/50"}`}>Solution</span>
         </Link>
 
         {/* Desktop */}

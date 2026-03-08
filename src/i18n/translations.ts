@@ -101,9 +101,9 @@ export const t = {
     items: [
       {
         quote: {
-          en: "NexusTech Ethiopia transformed our banking infrastructure. We reduced processing times by 60% while improving security.",
-          am: "NexusTech Ethiopia የባንክ መሰረተ ልማታችንን ቀይሮታል። ደህንነትን እያሻሻልን የማቀነባበሪያ ጊዜን በ60% ቀንሰናል።",
-          om: "NexusTech Ethiopia bu'uura baankii keenyaa jijjiireera. Yeroo adeemsaa 60% hir'isnee nageenya fooyyessineerra.",
+          en: "James Tech Solution transformed our banking infrastructure. We reduced processing times by 60% while improving security.",
+          am: "James Tech Solution የባንክ መሰረተ ልማታችንን ቀይሮታል። ደህንነትን እያሻሻልን የማቀነባበሪያ ጊዜን በ60% ቀንሰናል።",
+          om: "James Tech Solution bu'uura baankii keenyaa jijjiireera. Yeroo adeemsaa 60% hir'isnee nageenya fooyyessineerra.",
         },
         author: "Abebe Kebede",
         role: { en: "CTO, Commercial Bank of Ethiopia", am: "ዋና ቴክኖሎጂ ኃላፊ፣ የኢትዮጵያ ንግድ ባንክ", om: "Hogganaa Teeknooloojii, Baankii Daldalaa Itoophiyaa" },
@@ -132,9 +132,9 @@ export const t = {
     title1: { en: "Ready to transform", am: "ንግድዎን ለመቀየር", om: "Daldalaa keessan" },
     title2: { en: "your business?", am: "ዝግጁ ነዎት?", om: "jijjiiruuf qophiidha?" },
     desc: {
-      en: "Let's discuss how NexusTech Ethiopia can help you achieve your goals.",
-      am: "NexusTech Ethiopia ግቦችዎን ለማሳካት እንዴት ሊረዳዎ እንደሚችል እንነጋገር።",
-      om: "NexusTech Ethiopia kaayyoo keessan galmaan ga'uuf akkamiin akka isin gargaaruu danda'u haa mari'annu.",
+      en: "Let's discuss how James Tech Solution can help you achieve your goals.",
+      am: "James Tech Solution ግቦችዎን ለማሳካት እንዴት ሊረዳዎ እንደሚችል እንነጋገር።",
+      om: "James Tech Solution kaayyoo keessan galmaan ga'uuf akkamiin akka isin gargaaruu danda'u haa mari'annu.",
     },
     contact: { en: "Contact Us", am: "ያግኙን", om: "Nu Quunnamaa" },
     learn: { en: "Learn More", am: "ተጨማሪ ይወቁ", om: "Dabalata Baraa" },
@@ -145,9 +145,9 @@ export const t = {
     title1: { en: "Building the future of", am: "የኢትዮጵያ", om: "Gara fuula duraa" },
     title2: { en: "Ethiopian technology", am: "ቴክኖሎጂ ወደፊት", om: "teeknooloojii Itoophiyaa" },
     desc: {
-      en: "Founded in 2014, NexusTech Ethiopia has grown from a small Addis Ababa startup into a trusted technology partner for over 200 organizations across the country.",
-      am: "በ2014 የተመሰረተው NexusTech Ethiopia ከትንሽ የአዲስ አበባ ጅምር ወደ 200 በላይ ድርጅቶች ታማኝ የቴክኖሎጂ አጋር ሆኗል።",
-      om: "Bara 2014 kan hundeeffame NexusTech Ethiopia jalqabbii xixiqqaa Finfinnee irraa gara michuu teeknooloojii amanamaa dhaabbilee 200 ol ta'eera.",
+      en: "Founded in 2014, James Tech Solution has grown from a small Addis Ababa startup into a trusted technology partner for over 200 organizations across the country.",
+      am: "በ2014 የተመሰረተው James Tech Solution ከትንሽ የአዲስ አበባ ጅምር ወደ 200 በላይ ድርጅቶች ታማኝ የቴክኖሎጂ አጋር ሆኗል።",
+      om: "Bara 2014 kan hundeeffame James Tech Solution jalqabbii xixiqqaa Finfinnee irraa gara michuu teeknooloojii amanamaa dhaabbilee 200 ol ta'eera.",
     },
     statsYears: { en: "Years of Excellence", am: "የላቀ ዓመታት", om: "Waggaa Gaarii" },
     statsGrowth: { en: "Revenue Growth YoY", am: "ዓመታዊ ገቢ ዕድገት", om: "Guddina Galii Waggaa" },
@@ -215,9 +215,9 @@ export const t = {
     story: { en: "Our Story", am: "ታሪካችን", om: "Seenaa Keenya" },
     storyTitle: { en: "From startup to national partner", am: "ከጅምር ወደ ሀገራዊ አጋር", om: "Jalqabbii irraa gara michuu biyyaalessaatti" },
     storyP1: {
-      en: "NexusTech Ethiopia was born from a simple observation: Ethiopian businesses deserved world-class technology solutions built for local needs. Our founders, experienced engineers and entrepreneurs, saw an opportunity to bridge the gap between global tech and Ethiopian business requirements.",
-      am: "NexusTech Ethiopia ከቀላል ምልከታ ተወለደ፡ የኢትዮጵያ ንግዶች ለአካባቢው ፍላጎቶች የተገነቡ ዓለም አቀፍ ቴክኖሎጂ መፍትሔዎች ይገባቸዋል። መስራቾቻችን ልምድ ያላቸው መሃንዲሶች እና ስራ ፈጣሪዎች ዓለም አቀፍ ቴክ እና የኢትዮጵያ ንግድ መስፈርቶችን ለማገናኘት ዕድሉን ተመልክተዋል።",
-      om: "NexusTech Ethiopia hubannoo salphaa irraa dhalate: daldalli Itoophiyaa furmaata teeknooloojii sadarkaa addunyaa fedhii naannootiif ijaarame ni barbaada. Hundeessitoonni keenya injinaroota fi daldaltootni muuxannoo qaban carraa teeknooloojii addunyaa fi fedhii daldalaa Itoophiyaa walitti fiduuf argan.",
+      en: "James Tech Solution was born from a simple observation: Ethiopian businesses deserved world-class technology solutions built for local needs. Our founders, experienced engineers and entrepreneurs, saw an opportunity to bridge the gap between global tech and Ethiopian business requirements.",
+      am: "James Tech Solution ከቀላል ምልከታ ተወለደ፡ የኢትዮጵያ ንግዶች ለአካባቢው ፍላጎቶች የተገነቡ ዓለም አቀፍ ቴክኖሎጂ መፍትሔዎች ይገባቸዋል። መስራቾቻችን ልምድ ያላቸው መሃንዲሶች እና ስራ ፈጣሪዎች ዓለም አቀፍ ቴክ እና የኢትዮጵያ ንግድ መስፈርቶችን ለማገናኘት ዕድሉን ተመልክተዋል።",
+      om: "James Tech Solution hubannoo salphaa irraa dhalate: daldalli Itoophiyaa furmaata teeknooloojii sadarkaa addunyaa fedhii naannootiif ijaarame ni barbaada. Hundeessitoonni keenya injinaroota fi daldaltootni muuxannoo qaban carraa teeknooloojii addunyaa fi fedhii daldalaa Itoophiyaa walitti fiduuf argan.",
     },
     storyP2: {
       en: "Today we serve over 200 organizations across Ethiopia, from banks and telecoms to government agencies and growing startups. Our platform processes over 5 million transactions daily, and we maintain a 99.9% uptime SLA.",
@@ -230,7 +230,7 @@ export const t = {
       om: "Itoophiyaanota of boonnuudha, waajjira Finfinnee, Hawaasaa, Baahir Daar fi Adaamaa keessatti qabna. Gareen keenya injinaroota, dizaayinaroota fi tarsiimoota 150+ fuula duraa dijitaalaa Itoophiyaatiif kutannoo qabu.",
     },
     leadership: { en: "Leadership", am: "አመራር", om: "Hogganaa" },
-    leadershipTitle: { en: "The team behind NexusTech Ethiopia", am: "ከNexusTech Ethiopia ጀርባ ያለው ቡድን", om: "Garee NexusTech Ethiopia duuba jiru" },
+    leadershipTitle: { en: "The team behind James Tech Solution", am: "ከJames Tech Solution ጀርባ ያለው ቡድን", om: "Garee James Tech Solution duuba jiru" },
     team: [
       {
         name: "Dawit Mengistu",
@@ -464,7 +464,7 @@ export const t = {
     dev: { en: "Custom Development", am: "ብጁ ልማት", om: "Misoomaa Addaa" },
     consulting: { en: "Consulting", am: "ማማከር", om: "Gorsaa" },
     connect: { en: "Connect", am: "ይገናኙ", om: "Wal Qunnamaa" },
-    rights: { en: "© 2026 NexusTech Ethiopia. All rights reserved.", am: "© 2026 NexusTech Ethiopia. መብቶች በሙሉ የተጠበቁ ናቸው።", om: "© 2026 NexusTech Ethiopia. Mirgi hundi eegamaa dha." },
+    rights: { en: "© 2026 James Tech Solution. All rights reserved.", am: "© 2026 James Tech Solution. መብቶች በሙሉ የተጠበቁ ናቸው።", om: "© 2026 James Tech Solution. Mirgi hundi eegamaa dha." },
     privacy: { en: "Privacy Policy", am: "የግላዊነት ፖሊሲ", om: "Imaammata Iccitii" },
     terms: { en: "Terms of Service", am: "የአገልግሎት ውል", om: "Haala Tajaajilaa" },
   },

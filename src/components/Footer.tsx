@@ -14,8 +14,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
             <Link to="/" className="font-heading text-xl font-bold tracking-tight text-primary-foreground">
-              Nexus<span className="text-accent">Tech</span>
-              <span className="text-xs ml-1 font-normal text-primary-foreground/50">Ethiopia</span>
+              James<span className="text-accent">Tech</span>
+              <span className="text-xs ml-1 font-normal text-primary-foreground/50">Solution</span>
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/50 leading-relaxed max-w-xs">
               {t.footer.desc[lang]}

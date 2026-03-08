@@ -13,13 +13,13 @@ const LanguageContext = createContext<LanguageContextType>({
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [lang, setLang] = useState<Language>(() => {
-    const saved = localStorage.getItem("nexus-lang");
+    const saved = localStorage.getItem("jamestech-lang");
     return (saved as Language) || "en";
   });
 
   const handleSetLang = (newLang: Language) => {
     setLang(newLang);
-    localStorage.setItem("nexus-lang", newLang);
+    localStorage.setItem("jamestech-lang", newLang);
   };
 
   return (
