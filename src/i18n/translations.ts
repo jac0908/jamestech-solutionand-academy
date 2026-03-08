@@ -11,6 +11,7 @@ export const t = {
     home: { en: "Home", am: "መነሻ", om: "Fuula Jalqabaa" },
     about: { en: "About", am: "ስለ እኛ", om: "Waa'ee Keenya" },
     services: { en: "Services", am: "አገልግሎቶች", om: "Tajaajila" },
+    pricing: { en: "Pricing", am: "ዋጋ", om: "Gatii" },
     contact: { en: "Contact", am: "ያግኙን", om: "Nu Quunnamaa" },
     getStarted: { en: "Get Started", am: "ይጀምሩ", om: "Jalqabaa" },
   },
