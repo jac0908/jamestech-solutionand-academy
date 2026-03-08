@@ -233,39 +233,12 @@ export const t = {
     leadershipTitle: { en: "The team behind James Tech Solution", am: "ከJames Tech Solution ጀርባ ያለው ቡድን", om: "Garee James Tech Solution duuba jiru" },
     team: [
       {
-        name: "Dawit Mengistu",
-        role: { en: "Chief Executive Officer", am: "ዋና ሥራ አስፈጻሚ", om: "Hojii Raawwachiisaa Olaanaa" },
+        name: "Yaikob Diriba Tadessa",
+        role: { en: "Founder & CEO", am: "መስራች እና ዋና ሥራ አስፈጻሚ", om: "Hundeessaa fi Hojii Raawwachiisaa Olaanaa" },
         bio: {
-          en: "15+ years leading technology transformations across Ethiopian enterprises.",
-          am: "15+ ዓመታት የኢትዮጵያ ድርጅቶችን የቴክኖሎጂ ለውጥ በመምራት።",
-          om: "Waggaa 15+ jijjiirama teeknooloojii dhaabbilee Itoophiyaa hogganuu.",
-        },
-      },
-      {
-        name: "Hana Tesfaye",
-        role: { en: "Chief Technology Officer", am: "ዋና ቴክኖሎጂ ኃላፊ", om: "Hogganaa Teeknooloojii Olaanaa" },
-        bio: {
-          en: "Former lead engineer at Ethio Telecom with deep expertise in distributed systems.",
-          am: "የቀድሞ የኢትዮ ቴሌኮም ዋና መሃንዲስ ከስርጭት ስርዓቶች ጥልቅ እውቀት ጋር።",
-          om: "Injinara olaanaa duraanii Itoophiyaa Telekoom beekumsa gadi fagoo sirnaa raabsamaa.",
-        },
-      },
-      {
-        name: "Yonas Bekele",
-        role: { en: "VP of Product", am: "የምርት ምክትል ፕሬዚዳንት", om: "I/A P. Oomishaa" },
-        bio: {
-          en: "Product strategist who has launched platforms serving millions of Ethiopian users.",
-          am: "ሚሊዮኖች ኢትዮጵያውያን ተጠቃሚዎችን የሚያገለግሉ መድረኮችን ያስጀመረ የምርት ስትራቴጂስት።",
-          om: "Tarsiimoota oomishaa kan ardii fayyadamtoota Itoophiyaa miliyoonotaan lakkaa'aman eegalan.",
-        },
-      },
-      {
-        name: "Meron Alemu",
-        role: { en: "VP of Client Success", am: "የደንበኛ ስኬት ምክትል ፕሬዚዳንት", om: "I/A P. Milkaa'ina Maamiltootaa" },
-        bio: {
-          en: "Dedicated to ensuring every Ethiopian client achieves their strategic objectives.",
-          am: "እያንዳንዱ ኢትዮጵያዊ ደንበኛ ስልታዊ ዓላማቸውን እንዲያሳኩ መርዳት።",
-          om: "Maamilli Itoophiyaa hundi kaayyoo tarsiimoowwan isaanii akka galmaan ga'an mirkaneessuu.",
+          en: "BSc in Computer Science from Gambella University. Passionate about leveraging technology to transform Ethiopian businesses.",
+          am: "ከጋምቤላ ዩኒቨርሲቲ በኮምፒውተር ሳይንስ BSc። ቴክኖሎጂን በመጠቀም የኢትዮጵያ ንግዶችን ለመቀየር ቁርጠኛ።",
+          om: "BSc Saayinsii Kompitaraa Yuunivarsiitii Gambellaa irraa. Teeknooloojiidhaan daldalaa Itoophiyaa jijjiiruuf kutannoo qabu.",
         },
       },
     ],
