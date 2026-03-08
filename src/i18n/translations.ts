@@ -132,9 +132,9 @@ export const t = {
     title1: { en: "Ready to transform", am: "ንግድዎን ለመቀየር", om: "Daldalaa keessan" },
     title2: { en: "your business?", am: "ዝግጁ ነዎት?", om: "jijjiiruuf qophiidha?" },
     desc: {
-      en: "Let's discuss how NexusTech Ethiopia can help you achieve your goals.",
-      am: "NexusTech Ethiopia ግቦችዎን ለማሳካት እንዴት ሊረዳዎ እንደሚችል እንነጋገር።",
-      om: "NexusTech Ethiopia kaayyoo keessan galmaan ga'uuf akkamiin akka isin gargaaruu danda'u haa mari'annu.",
+      en: "Let's discuss how James Tech Solution can help you achieve your goals.",
+      am: "James Tech Solution ግቦችዎን ለማሳካት እንዴት ሊረዳዎ እንደሚችል እንነጋገር።",
+      om: "James Tech Solution kaayyoo keessan galmaan ga'uuf akkamiin akka isin gargaaruu danda'u haa mari'annu.",
     },
     contact: { en: "Contact Us", am: "ያግኙን", om: "Nu Quunnamaa" },
     learn: { en: "Learn More", am: "ተጨማሪ ይወቁ", om: "Dabalata Baraa" },
