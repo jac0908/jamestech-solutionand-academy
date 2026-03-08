@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { lang } = useLanguage();
