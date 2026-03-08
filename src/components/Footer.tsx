@@ -52,7 +52,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-primary-foreground/50">
               <li><a href="https://t.me/jacob_web123" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Telegram</a></li>
               <li className="hover:text-accent transition-colors cursor-pointer">LinkedIn</li>
-              <li className="hover:text-accent transition-colors cursor-pointer">GitHub</li>
+              <li><a href="https://github.com/jac0908" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">GitHub</a></li>
             </ul>
           </div>
         </div>
