@@ -464,7 +464,7 @@ export const t = {
     dev: { en: "Custom Development", am: "ብጁ ልማት", om: "Misoomaa Addaa" },
     consulting: { en: "Consulting", am: "ማማከር", om: "Gorsaa" },
     connect: { en: "Connect", am: "ይገናኙ", om: "Wal Qunnamaa" },
-    rights: { en: "© 2026 NexusTech Ethiopia. All rights reserved.", am: "© 2026 NexusTech Ethiopia. መብቶች በሙሉ የተጠበቁ ናቸው።", om: "© 2026 NexusTech Ethiopia. Mirgi hundi eegamaa dha." },
+    rights: { en: "© 2026 James Tech Solution. All rights reserved.", am: "© 2026 James Tech Solution. መብቶች በሙሉ የተጠበቁ ናቸው።", om: "© 2026 James Tech Solution. Mirgi hundi eegamaa dha." },
     privacy: { en: "Privacy Policy", am: "የግላዊነት ፖሊሲ", om: "Imaammata Iccitii" },
     terms: { en: "Terms of Service", am: "የአገልግሎት ውል", om: "Haala Tajaajilaa" },
   },

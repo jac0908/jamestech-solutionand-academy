@@ -19,7 +19,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
   const handleSetLang = (newLang: Language) => {
     setLang(newLang);
-    localStorage.setItem("nexus-lang", newLang);
+    localStorage.setItem("jamestech-lang", newLang);
   };
 
   return (
