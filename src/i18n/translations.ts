@@ -179,7 +179,7 @@ export const t = {
     journeyTitle: { en: "Milestones that matter", am: "ጉልህ ምዕራፎች", om: "Waantota Barbaachisan" },
     milestones: [
       {
-        year: "2014",
+        year: "2018",
         title: { en: "Founded", am: "ተመሠረተ", om: "Hundeeffame" },
         desc: {
           en: "Started as a 5-person tech team in Addis Ababa.",
@@ -188,7 +188,7 @@ export const t = {
         },
       },
       {
-        year: "2017",
+        year: "2019",
         title: { en: "First Major Client", am: "የመጀመሪያ ዋና ደንበኛ", om: "Maamila Guddaa Jalqabaa" },
         desc: {
           en: "Partnered with Ethiopian Airlines for digital transformation.",
