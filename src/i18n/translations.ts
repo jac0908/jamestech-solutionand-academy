@@ -242,17 +242,6 @@ export const t = {
         },
       },
     ],
-      },
-      {
-        name: "Meron Alemu",
-        role: { en: "VP of Client Success", am: "የደንበኛ ስኬት ምክትል ፕሬዚዳንት", om: "I/A P. Milkaa'ina Maamiltootaa" },
-        bio: {
-          en: "Dedicated to ensuring every Ethiopian client achieves their strategic objectives.",
-          am: "እያንዳንዱ ኢትዮጵያዊ ደንበኛ ስልታዊ ዓላማቸውን እንዲያሳኩ መርዳት።",
-          om: "Maamilli Itoophiyaa hundi kaayyoo tarsiimoowwan isaanii akka galmaan ga'an mirkaneessuu.",
-        },
-      },
-    ],
   },
   // Services page
   services: {
