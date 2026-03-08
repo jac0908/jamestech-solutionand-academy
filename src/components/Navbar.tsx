@@ -2,18 +2,22 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const navLinks = [
-  { label: "Home", to: "/" },
-  { label: "About", to: "/about" },
-  { label: "Services", to: "/services" },
-  { label: "Contact", to: "/contact" },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
+import { t } from "@/i18n/translations";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { lang } = useLanguage();
+
+  const navLinks = [
+    { label: t.nav.home[lang], to: "/" },
+    { label: t.nav.about[lang], to: "/about" },
+    { label: t.nav.services[lang], to: "/services" },
+    { label: t.nav.contact[lang], to: "/contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -33,10 +37,11 @@ const Navbar = () => {
         <Link to="/" className="font-heading text-xl font-bold tracking-tight">
           <span className={scrolled ? "text-foreground" : "text-primary-foreground"}>Nexus</span>
           <span className="text-accent">Tech</span>
+          <span className={`text-xs ml-1 font-normal ${scrolled ? "text-muted-foreground" : "text-primary-foreground/50"}`}>Ethiopia</span>
         </Link>
 
         {/* Desktop */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.to}
@@ -52,11 +57,12 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          <LanguageSwitcher scrolled={scrolled} />
           <Link
             to="/contact"
             className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-all hover:bg-accent/90 glow-accent"
           >
-            Get Started
+            {t.nav.getStarted[lang]}
           </Link>
         </nav>
 
@@ -92,12 +98,13 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
+              <LanguageSwitcher scrolled={true} />
               <Link
                 to="/contact"
                 onClick={() => setMobileOpen(false)}
                 className="inline-flex items-center justify-center rounded-lg bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground mt-2"
               >
-                Get Started
+                {t.nav.getStarted[lang]}
               </Link>
             </nav>
           </motion.div>
