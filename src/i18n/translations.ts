@@ -101,9 +101,9 @@ export const t = {
     items: [
       {
         quote: {
-          en: "NexusTech Ethiopia transformed our banking infrastructure. We reduced processing times by 60% while improving security.",
-          am: "NexusTech Ethiopia የባንክ መሰረተ ልማታችንን ቀይሮታል። ደህንነትን እያሻሻልን የማቀነባበሪያ ጊዜን በ60% ቀንሰናል።",
-          om: "NexusTech Ethiopia bu'uura baankii keenyaa jijjiireera. Yeroo adeemsaa 60% hir'isnee nageenya fooyyessineerra.",
+          en: "James Tech Solution transformed our banking infrastructure. We reduced processing times by 60% while improving security.",
+          am: "James Tech Solution የባንክ መሰረተ ልማታችንን ቀይሮታል። ደህንነትን እያሻሻልን የማቀነባበሪያ ጊዜን በ60% ቀንሰናል።",
+          om: "James Tech Solution bu'uura baankii keenyaa jijjiireera. Yeroo adeemsaa 60% hir'isnee nageenya fooyyessineerra.",
         },
         author: "Abebe Kebede",
         role: { en: "CTO, Commercial Bank of Ethiopia", am: "ዋና ቴክኖሎጂ ኃላፊ፣ የኢትዮጵያ ንግድ ባንክ", om: "Hogganaa Teeknooloojii, Baankii Daldalaa Itoophiyaa" },
