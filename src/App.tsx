@@ -15,6 +15,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import AdminLogin from "./pages/AdminLogin";
 import AdminSecurity from "./pages/AdminSecurity";
+import AdminProfile from "./pages/AdminProfile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin/security" element={<AdminSecurity />} />
+            <Route path="/admin/profile" element={<AdminProfile />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

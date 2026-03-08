@@ -66,6 +66,7 @@ const Footer = () => {
           <div className="flex gap-6 mt-4 sm:mt-0">
             <Link to="/privacy-policy" className="hover:text-accent transition-colors">{t.footer.privacy[lang]}</Link>
             <Link to="/terms-of-service" className="hover:text-accent transition-colors">{t.footer.terms[lang]}</Link>
+            <Link to="/admin/login" className="hover:text-accent transition-colors">Admin</Link>
           </div>
         </div>
       </div>

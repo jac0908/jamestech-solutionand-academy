@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { supabase } from "@/integrations/supabase/client";
-import { Shield, AlertTriangle, Activity, Clock, LogOut, RefreshCw } from "lucide-react";
+import { Shield, AlertTriangle, Activity, Clock, LogOut, RefreshCw, Trash2, Pencil, X, Check, User } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 interface SecurityEvent {
   id: string;
@@ -28,7 +29,10 @@ const AdminSecurity = () => {
   const [events, setEvents] = useState<SecurityEvent[]>([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<string>("all");
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editForm, setEditForm] = useState<Partial<SecurityEvent>>({});
   const navigate = useNavigate();
+  const { toast } = useToast();
 
   const fetchEvents = async () => {
     setLoading(true);
@@ -57,7 +61,6 @@ const AdminSecurity = () => {
   };
 
   useEffect(() => {
-    // Check auth
     const checkAuth = async () => {
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
@@ -85,20 +88,48 @@ const AdminSecurity = () => {
     navigate("/admin/login");
   };
 
-  const formatDate = (dateStr: string) => {
-    const d = new Date(dateStr);
-    return d.toLocaleString();
+  const handleDelete = async (id: string) => {
+    const { error } = await supabase.from("security_events").delete().eq("id", id);
+    if (error) {
+      toast({ title: "Error", description: "Failed to delete event", variant: "destructive" });
+    } else {
+      setEvents(events.filter((e) => e.id !== id));
+      toast({ title: "Deleted", description: "Security event removed" });
+    }
   };
+
+  const startEdit = (event: SecurityEvent) => {
+    setEditingId(event.id);
+    setEditForm({ severity: event.severity, description: event.description, event_type: event.event_type });
+  };
+
+  const cancelEdit = () => {
+    setEditingId(null);
+    setEditForm({});
+  };
+
+  const saveEdit = async (id: string) => {
+    const { error } = await supabase
+      .from("security_events")
+      .update({ severity: editForm.severity, description: editForm.description, event_type: editForm.event_type })
+      .eq("id", id);
+
+    if (error) {
+      toast({ title: "Error", description: "Failed to update event", variant: "destructive" });
+    } else {
+      setEvents(events.map((e) => (e.id === id ? { ...e, ...editForm } : e)));
+      toast({ title: "Updated", description: "Security event updated" });
+      cancelEdit();
+    }
+  };
+
+  const formatDate = (dateStr: string) => new Date(dateStr).toLocaleString();
 
   const stats = {
     total: events.length,
     critical: events.filter((e) => e.severity === "critical").length,
     high: events.filter((e) => e.severity === "high").length,
-    today: events.filter((e) => {
-      const today = new Date();
-      const eventDate = new Date(e.created_at);
-      return eventDate.toDateString() === today.toDateString();
-    }).length,
+    today: events.filter((e) => new Date(e.created_at).toDateString() === new Date().toDateString()).length,
   };
 
   return (
@@ -112,10 +143,16 @@ const AdminSecurity = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold text-foreground">Security Dashboard</h1>
-              <p className="text-sm text-muted-foreground">Monitor and review security events</p>
+              <p className="text-sm text-muted-foreground">Monitor and manage security events</p>
             </div>
           </div>
           <div className="flex gap-3">
+            <button
+              onClick={() => navigate("/admin/profile")}
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:bg-muted transition-colors"
+            >
+              <User size={14} /> Profile
+            </button>
             <button
               onClick={fetchEvents}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border text-sm font-medium text-foreground hover:bg-muted transition-colors"
@@ -186,6 +223,7 @@ const AdminSecurity = () => {
                     <th className="text-left px-5 py-4 font-semibold text-foreground">Description</th>
                     <th className="text-left px-5 py-4 font-semibold text-foreground">IP</th>
                     <th className="text-left px-5 py-4 font-semibold text-foreground">Path</th>
+                    <th className="text-left px-5 py-4 font-semibold text-foreground">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -195,16 +233,69 @@ const AdminSecurity = () => {
                         {formatDate(event.created_at)}
                       </td>
                       <td className="px-5 py-4">
-                        <span className="font-mono text-xs bg-muted px-2 py-1 rounded">{event.event_type}</span>
+                        {editingId === event.id ? (
+                          <input
+                            value={editForm.event_type || ""}
+                            onChange={(e) => setEditForm({ ...editForm, event_type: e.target.value })}
+                            className="w-24 rounded border border-input bg-background px-2 py-1 text-xs font-mono text-foreground focus:outline-none focus:ring-1 focus:ring-ring"
+                          />
+                        ) : (
+                          <span className="font-mono text-xs bg-muted px-2 py-1 rounded">{event.event_type}</span>
+                        )}
                       </td>
                       <td className="px-5 py-4">
-                        <span className={`text-xs font-semibold px-2.5 py-1 rounded-full capitalize ${severityColors[event.severity] || ""}`}>
-                          {event.severity}
-                        </span>
+                        {editingId === event.id ? (
+                          <select
+                            value={editForm.severity || ""}
+                            onChange={(e) => setEditForm({ ...editForm, severity: e.target.value })}
+                            className="rounded border border-input bg-background px-2 py-1 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-ring"
+                          >
+                            {["low", "medium", "high", "critical"].map((s) => (
+                              <option key={s} value={s}>{s}</option>
+                            ))}
+                          </select>
+                        ) : (
+                          <span className={`text-xs font-semibold px-2.5 py-1 rounded-full capitalize ${severityColors[event.severity] || ""}`}>
+                            {event.severity}
+                          </span>
+                        )}
                       </td>
-                      <td className="px-5 py-4 text-foreground max-w-xs truncate">{event.description}</td>
+                      <td className="px-5 py-4 max-w-xs">
+                        {editingId === event.id ? (
+                          <input
+                            value={editForm.description || ""}
+                            onChange={(e) => setEditForm({ ...editForm, description: e.target.value })}
+                            className="w-full rounded border border-input bg-background px-2 py-1 text-xs text-foreground focus:outline-none focus:ring-1 focus:ring-ring"
+                          />
+                        ) : (
+                          <span className="text-foreground truncate block">{event.description}</span>
+                        )}
+                      </td>
                       <td className="px-5 py-4 text-muted-foreground font-mono text-xs">{event.ip_address || "—"}</td>
                       <td className="px-5 py-4 text-muted-foreground text-xs">{event.path || "—"}</td>
+                      <td className="px-5 py-4">
+                        <div className="flex items-center gap-1">
+                          {editingId === event.id ? (
+                            <>
+                              <button onClick={() => saveEdit(event.id)} className="p-1.5 rounded hover:bg-accent/10 text-accent transition-colors">
+                                <Check size={14} />
+                              </button>
+                              <button onClick={cancelEdit} className="p-1.5 rounded hover:bg-muted text-muted-foreground transition-colors">
+                                <X size={14} />
+                              </button>
+                            </>
+                          ) : (
+                            <>
+                              <button onClick={() => startEdit(event)} className="p-1.5 rounded hover:bg-accent/10 text-muted-foreground hover:text-accent transition-colors">
+                                <Pencil size={14} />
+                              </button>
+                              <button onClick={() => handleDelete(event.id)} className="p-1.5 rounded hover:bg-destructive/10 text-muted-foreground hover:text-destructive transition-colors">
+                                <Trash2 size={14} />
+                              </button>
+                            </>
+                          )}
+                        </div>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
