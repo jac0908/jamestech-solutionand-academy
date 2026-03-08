@@ -64,8 +64,8 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between text-xs text-primary-foreground/40">
           <p>{t.footer.rights[lang]}</p>
           <div className="flex gap-6 mt-4 sm:mt-0">
-            <span className="hover:text-accent transition-colors cursor-pointer">{t.footer.privacy[lang]}</span>
-            <span className="hover:text-accent transition-colors cursor-pointer">{t.footer.terms[lang]}</span>
+            <Link to="/privacy-policy" className="hover:text-accent transition-colors">{t.footer.privacy[lang]}</Link>
+            <Link to="/terms-of-service" className="hover:text-accent transition-colors">{t.footer.terms[lang]}</Link>
           </div>
         </div>
       </div>
