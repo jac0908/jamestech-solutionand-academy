@@ -37,8 +37,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-18 py-4">
-        <Link to="/" className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="JamesTech Logo" className="h-10 w-auto" />
+          <div className="hidden sm:flex flex-col leading-tight">
+            <span className={`text-sm font-bold font-heading tracking-wide ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>James Tech Solution</span>
+            <span className={`text-[10px] tracking-widest uppercase ${scrolled ? "text-muted-foreground" : "text-primary-foreground/50"}`}>Website Development & Design</span>
+          </div>
         </Link>
 
         {/* Desktop */}
