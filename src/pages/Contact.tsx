@@ -1,17 +1,49 @@
 import { motion } from "framer-motion";
 import Layout from "@/components/Layout";
 import { Mail, MapPin, Phone, Clock, ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
+import { checkRateLimit, reportHoneypotTriggered, reportFormAbuse } from "@/lib/security-monitor";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const { lang } = useLanguage();
   const c = t.contact;
+  const submitCount = useRef(0);
+  const lastSubmitTime = useRef(0);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+
+    // Honeypot check - hidden field that bots fill
+    const honeypot = formData.get("website_url");
+    if (honeypot) {
+      reportHoneypotTriggered("contact");
+      setSubmitted(true); // Fake success for bots
+      return;
+    }
+
+    // Rate limit check
+    if (checkRateLimit("contact_form")) {
+      reportFormAbuse("contact");
+      return;
+    }
+
+    // Rapid submission check
+    const now = Date.now();
+    if (now - lastSubmitTime.current < 3000) {
+      submitCount.current++;
+      if (submitCount.current >= 3) {
+        reportFormAbuse("contact");
+        return;
+      }
+    } else {
+      submitCount.current = 0;
+    }
+    lastSubmitTime.current = now;
+
     setSubmitted(true);
   };
 
@@ -118,6 +150,14 @@ const Contact = () => {
                 <button type="submit" className="group w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground transition-all hover:bg-accent/90 glow-accent">
                   {c.sendButton[lang]} <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
                 </button>
+                {/* Honeypot - hidden from humans, bots fill it */}
+                <input
+                  type="text"
+                  name="website_url"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  style={{ position: "absolute", left: "-9999px", opacity: 0, height: 0 }}
+                />
                 <p className="text-xs text-muted-foreground text-center">{c.privacy[lang]}</p>
               </form>
             )}
