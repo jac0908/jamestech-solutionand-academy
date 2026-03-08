@@ -420,6 +420,92 @@ export const t = {
     },
     sendAnother: { en: "Send another message", am: "ሌላ መልዕክት ላክ", om: "Ergaa biraa ergi" },
   },
+  // Pricing page
+  pricing: {
+    badge: { en: "Pricing", am: "ዋጋ", om: "Gatii" },
+    title1: { en: "Simple, transparent", am: "ቀላል፣ ግልጽ", om: "Salphaa, ifaa" },
+    title2: { en: "pricing", am: "ዋጋ አወጣጥ", om: "gatii" },
+    desc: {
+      en: "Choose the plan that fits your business. No hidden fees, no surprises.",
+      am: "ለንግድዎ የሚስማማውን ዕቅድ ይምረጡ። ምንም ድብቅ ክፍያ የለም።",
+      om: "Karoora daldalaa keessaniif ta'u filadhaa. Kaffaltiin dhoksaa hin jiru.",
+    },
+    plansLabel: { en: "Plans", am: "ዕቅዶች", om: "Karooraalee" },
+    plansTitle: { en: "Find the right plan for you", am: "ለእርስዎ ተስማሚ ዕቅድ ያግኙ", om: "Karoora sirrii ta'e argadhaa" },
+    popular: { en: "Most Popular", am: "በጣም ተወዳጅ", om: "Baay'ee Jaalatamaa" },
+    tiers: [
+      {
+        name: { en: "Starter", am: "ጀማሪ", om: "Jalqabaa" },
+        desc: { en: "Perfect for small businesses getting started with technology.", am: "ቴክኖሎጂ ለሚጀምሩ ትናንሽ ንግዶች ተስማሚ።", om: "Daldalaa xixiqqaa teeknooloojii jalqabuuf mijataa." },
+        price: { en: "$499", am: "$499", om: "$499" },
+        period: { en: "/month", am: "/ወር", om: "/ji'a" },
+        features: [
+          { en: "Up to 5 users", am: "እስከ 5 ተጠቃሚዎች", om: "Hanga fayyadamtoota 5" },
+          { en: "Basic cloud hosting", am: "መሰረታዊ ክላውድ ማስተናገድ", om: "Kilaawudii bu'uuraa" },
+          { en: "Email support", am: "የኢሜይል ድጋፍ", om: "Deeggarsa Imeelii" },
+          { en: "Monthly reports", am: "ወርሃዊ ሪፖርቶች", om: "Gabaasa Ji'aa" },
+          { en: "Basic security", am: "መሰረታዊ ደህንነት", om: "Nageenya Bu'uuraa" },
+        ],
+        cta: { en: "Get Started", am: "ይጀምሩ", om: "Jalqabaa" },
+      },
+      {
+        name: { en: "Professional", am: "ፕሮፌሽናል", om: "Ogummaa" },
+        desc: { en: "For growing businesses that need advanced features and support.", am: "የላቀ ባህሪያት እና ድጋፍ ለሚፈልጉ እያደጉ ያሉ ንግዶች።", om: "Daldalaa guddachaa amala olaanaa fi deeggarsa barbaadaniif." },
+        price: { en: "$1,299", am: "$1,299", om: "$1,299" },
+        period: { en: "/month", am: "/ወር", om: "/ji'a" },
+        features: [
+          { en: "Up to 25 users", am: "እስከ 25 ተጠቃሚዎች", om: "Hanga fayyadamtoota 25" },
+          { en: "Advanced cloud infrastructure", am: "የላቀ ክላውድ መሰረተ ልማት", om: "Bu'uura kilaawudii olaanaa" },
+          { en: "Priority support (24/7)", am: "ቅድሚያ ድጋፍ (24/7)", om: "Deeggarsa dursa (24/7)" },
+          { en: "Real-time analytics", am: "የቅጽበት ትንተና", om: "Xiinxala yeroo qabatamaa" },
+          { en: "Advanced security & compliance", am: "የላቀ ደህንነት እና ተገዢነት", om: "Nageenya olaanaa fi hordoffii" },
+          { en: "Custom integrations", am: "ብጁ ውህደቶች", om: "Walitti makamsa addaa" },
+          { en: "Dedicated account manager", am: "ልዩ ሂሳብ አስተዳዳሪ", om: "Bulchaa herrega addaa" },
+        ],
+        cta: { en: "Get Started", am: "ይጀምሩ", om: "Jalqabaa" },
+      },
+      {
+        name: { en: "Enterprise", am: "ድርጅት", om: "Dhaabbata" },
+        desc: { en: "Tailored solutions for large organizations with complex needs.", am: "ውስብስብ ፍላጎቶች ላላቸው ትላልቅ ድርጅቶች የተበጁ መፍትሔዎች።", om: "Furmaata dhaabbilee gurguddaa fedhii walxaxaa qabaniif qophaa'e." },
+        price: { en: "Custom", am: "ብጁ", om: "Addaa" },
+        period: null,
+        features: [
+          { en: "Unlimited users", am: "ያልተገደበ ተጠቃሚ", om: "Fayyadamtoota daangaa hin qabne" },
+          { en: "Dedicated infrastructure", am: "ልዩ መሰረተ ልማት", om: "Bu'uura misoomaa addaa" },
+          { en: "24/7 premium support", am: "24/7 ፕሪሚየም ድጋፍ", om: "Deeggarsa piremiyeemii 24/7" },
+          { en: "Custom analytics & AI", am: "ብጁ ትንተና እና AI", om: "Xiinxala addaa fi AI" },
+          { en: "Enterprise-grade security", am: "የድርጅት ደረጃ ደህንነት", om: "Nageenya sadarkaa dhaabbataa" },
+          { en: "Full API access", am: "ሙሉ API ተደራሽነት", om: "Argama API guutuu" },
+          { en: "SLA guarantee", am: "SLA ዋስትና", om: "Waadaa SLA" },
+          { en: "On-site consultation", am: "በቦታው ምክክር", om: "Gorsa iddootti" },
+        ],
+        cta: { en: "Contact Sales", am: "ሽያጮችን ያግኙ", om: "Gurgurtaa Quunnamaa" },
+      },
+    ],
+    faqLabel: { en: "FAQ", am: "ጥያቄዎች", om: "Gaaffilee" },
+    faqTitle: { en: "Frequently asked questions", am: "በተደጋጋሚ የሚጠየቁ ጥያቄዎች", om: "Gaaffilee yeroo baay'ee gaafataman" },
+    faqs: [
+      {
+        q: { en: "Can I switch plans at any time?", am: "በማንኛውም ጊዜ ዕቅድ መቀየር እችላለሁ?", om: "Yeroo barbaaddetti karoora jijjiiruu nan danda'aa?" },
+        a: { en: "Yes, you can upgrade or downgrade your plan at any time. Changes take effect at the start of your next billing cycle.", am: "አዎ፣ በማንኛውም ጊዜ ዕቅድዎን ማሻሻል ወይም ማውረድ ይችላሉ።", om: "Eeyyee, yeroo barbaaddetti karoora keessan olkaasuu ykn gadi buusuu dandeessu." },
+      },
+      {
+        q: { en: "Is there a free trial?", am: "ነጻ ሙከራ አለ?", om: "Yaalii bilisaa ni jiraa?" },
+        a: { en: "We offer a 14-day free trial on our Starter and Professional plans. No credit card required.", am: "በጀማሪ እና ፕሮፌሽናል ዕቅዶች ላይ 14 ቀን ነጻ ሙከራ እናቀርባለን።", om: "Karoora Jalqabaa fi Ogummaa irratti yaalii bilisaa guyyaa 14 kennina." },
+      },
+      {
+        q: { en: "What payment methods do you accept?", am: "ምን ዓይነት የክፍያ ዘዴዎች ይቀበላሉ?", om: "Mala kaffaltii akkamii fudhattan?" },
+        a: { en: "We accept bank transfers, Telebirr, CBE Birr, and international credit cards.", am: "የባንክ ዝውውር፣ ቴሌብር፣ CBE ብር እና ዓለም አቀፍ ክሬዲት ካርዶችን እንቀበላለን።", om: "Dabarsa baankii, Telebirr, CBE Birr fi kaardii kireediitii addunyaa ni fudhanna." },
+      },
+      {
+        q: { en: "Do you offer custom solutions?", am: "ብጁ መፍትሔዎች ያቀርባሉ?", om: "Furmaata addaa ni kennitan?" },
+        a: { en: "Absolutely. Our Enterprise plan is fully customizable. Contact our sales team to discuss your specific requirements.", am: "በእርግጥ። የድርጅት ዕቅዳችን ሙሉ በሙሉ ሊበጅ ይችላል።", om: "Tole. Karoorri Dhaabbataa guutummaatti jijjiiramu danda'a. Fedhii keessan mari'achuuf garee gurgurtaa quunnamaa." },
+      },
+    ],
+    ctaTitle: { en: "Ready to get started?", am: "ለመጀመር ዝግጁ ነዎት?", om: "Jalqabuuf qophiidha?" },
+    ctaDesc: { en: "Contact us today and let's find the perfect solution for your business.", am: "ዛሬ ያግኙን ለንግድዎ ፍፁም መፍትሔ እናግኝ።", om: "Har'a nu quunnamaa furmaata daldalaa keessaniif sirrii ta'e haa argannu." },
+    ctaButton: { en: "Contact Us", am: "ያግኙን", om: "Nu Quunnamaa" },
+  },
   // Footer
   footer: {
     desc: {
