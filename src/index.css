@@ -15,8 +15,6 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 30% 12%;
 
-    --primary: 220 40% 13%;
-    --primary-foreground: 210 20% 98%;
 
     --secondary: 210 18% 95%;
     --secondary-foreground: 220 30% 12%;
@@ -24,24 +22,27 @@
     --muted: 210 14% 93%;
     --muted-foreground: 215 14% 46%;
 
-    --accent: 174 62% 40%;
-    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 20% 98%;
 
     --border: 214 20% 90%;
     --input: 214 20% 90%;
-    --ring: 174 62% 40%;
+    --primary: 217 75% 18%;
+    --primary-foreground: 210 40% 98%;
+
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --ring: 210 100% 50%;
 
     --radius: 0.625rem;
 
-    --hero-gradient: linear-gradient(135deg, hsl(220 40% 8%) 0%, hsl(220 35% 15%) 30%, hsl(200 40% 20%) 60%, hsl(174 45% 25%) 100%);
-    --section-gradient: linear-gradient(180deg, hsl(210 20% 98%) 0%, hsl(210 22% 96%) 50%, hsl(210 18% 95%) 100%);
-    --card-shadow: 0 1px 3px hsl(220 30% 12% / 0.04), 0 6px 16px hsl(220 30% 12% / 0.06);
-    --card-shadow-hover: 0 8px 30px hsl(220 30% 12% / 0.1), 0 20px 50px hsl(220 30% 12% / 0.14);
-    --glow-accent: 0 0 40px hsl(174 62% 40% / 0.2), 0 0 80px hsl(174 62% 40% / 0.08);
-    --glow-accent-strong: 0 0 60px hsl(174 62% 40% / 0.3), 0 0 120px hsl(174 62% 40% / 0.12);
+    --hero-gradient: linear-gradient(135deg, hsl(220 60% 8%) 0%, hsl(217 70% 16%) 35%, hsl(212 80% 28%) 70%, hsl(205 90% 45%) 100%);
+    --section-gradient: linear-gradient(180deg, hsl(210 40% 99%) 0%, hsl(210 40% 97%) 50%, hsl(210 35% 95%) 100%);
+    --card-shadow: 0 1px 3px hsl(217 60% 12% / 0.05), 0 8px 24px hsl(217 60% 12% / 0.08);
+    --card-shadow-hover: 0 8px 30px hsl(212 80% 28% / 0.15), 0 20px 60px hsl(212 80% 28% / 0.18);
+    --glow-accent: 0 0 40px hsl(210 100% 55% / 0.3), 0 0 80px hsl(210 100% 55% / 0.12);
+    --glow-accent-strong: 0 0 60px hsl(210 100% 55% / 0.45), 0 0 120px hsl(210 100% 55% / 0.18);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -116,13 +117,13 @@
     box-shadow: var(--glow-accent-strong);
   }
   .text-gradient {
-    background: linear-gradient(135deg, hsl(174 62% 45%), hsl(174 62% 65%));
+    background: linear-gradient(135deg, hsl(210 100% 55%), hsl(200 100% 70%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .text-gradient-warm {
-    background: linear-gradient(135deg, hsl(174 62% 40%), hsl(200 60% 50%), hsl(174 62% 55%));
+    background: linear-gradient(135deg, hsl(217 90% 45%), hsl(200 100% 55%), hsl(195 100% 65%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
 import LanguageSwitcher from "./LanguageSwitcher";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.jpg";
 
 const Navbar = () => {
   const location = useLocation();
@@ -38,11 +38,14 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-18 py-4">
-        <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="JamesTech Logo" className="h-10 w-auto" />
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="relative">
+            <div className="absolute inset-0 rounded-xl bg-accent/40 blur-md opacity-60 group-hover:opacity-100 transition-opacity" />
+            <img src={logo} alt="James Tech Solution and Academy Logo" className="relative h-11 w-11 rounded-xl object-cover ring-1 ring-white/20 shadow-lg" />
+          </div>
           <div className="hidden sm:flex flex-col leading-tight">
-            <span className={`text-sm font-bold font-heading tracking-wide ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>James Tech Solution</span>
-            <span className={`text-[10px] tracking-widest uppercase ${scrolled ? "text-muted-foreground" : "text-primary-foreground/50"}`}>Website Development & Design</span>
+            <span className={`text-sm font-bold font-heading tracking-wide ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>James Tech Solution & Academy</span>
+            <span className={`text-[10px] tracking-widest uppercase ${scrolled ? "text-muted-foreground" : "text-primary-foreground/50"}`}>Innovate · Educate · Elevate</span>
           </div>
         </Link>
 

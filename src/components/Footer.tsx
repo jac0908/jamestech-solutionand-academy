@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { t } from "@/i18n/translations";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-new.jpg";
 
 const Footer = () => {
   const { lang } = useLanguage();
@@ -15,10 +15,10 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-3">
-              <img src={logo} alt="JamesTech Logo" className="h-12 w-auto" />
+              <img src={logo} alt="James Tech Solution and Academy Logo" className="h-12 w-12 rounded-xl object-cover ring-1 ring-white/20 shadow-lg" />
               <div className="flex flex-col leading-tight">
-                <span className="text-sm font-bold font-heading tracking-wide text-primary-foreground">James Tech Solution</span>
-                <span className="text-[10px] tracking-widest uppercase text-primary-foreground/50">Website Development & Design</span>
+                <span className="text-sm font-bold font-heading tracking-wide text-primary-foreground">James Tech Solution & Academy</span>
+                <span className="text-[10px] tracking-widest uppercase text-primary-foreground/50">Innovate · Educate · Elevate</span>
               </div>
             </Link>
             <p className="mt-4 text-sm text-primary-foreground/50 leading-relaxed max-w-xs">
