@@ -35,10 +35,10 @@ const Navbar = () => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`mx-auto max-w-6xl flex items-center justify-between gap-4 rounded-2xl px-4 sm:px-5 py-2.5 transition-all duration-500 ${
+        className={`mx-auto max-w-6xl flex items-center justify-between gap-4 rounded-2xl px-3 sm:px-5 py-2.5 transition-all duration-500 ${
           scrolled
-            ? "bg-background/80 backdrop-blur-2xl border border-border/60 shadow-[0_8px_30px_-12px_hsl(217_60%_12%/0.18)]"
-            : "bg-white/5 backdrop-blur-xl border border-white/10"
+            ? "bg-black/90 backdrop-blur-2xl border border-white/10 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.6)]"
+            : "bg-black/30 backdrop-blur-xl border border-white/10"
         }`}
       >
         <Link to="/" className="flex items-center gap-3 group shrink-0">
@@ -47,8 +47,8 @@ const Navbar = () => {
             <img src={logo} alt="James Tech Solution and Academy Logo" className="relative h-10 w-10 rounded-xl object-cover ring-1 ring-white/20 shadow-lg" />
           </div>
           <div className="hidden sm:flex flex-col leading-tight">
-            <span className={`text-[13px] font-bold font-heading tracking-tight ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>James Tech Solution & Academy</span>
-            <span className={`text-[9px] tracking-[0.18em] uppercase ${scrolled ? "text-muted-foreground" : "text-primary-foreground/55"}`}>Innovate · Educate · Elevate</span>
+            <span className="text-[13px] font-bold font-heading tracking-tight text-white">James Tech Solution & Academy</span>
+            <span className="text-[9px] tracking-[0.18em] uppercase text-white/60">Innovate · Educate · Elevate</span>
           </div>
         </Link>
 
@@ -60,10 +60,10 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative px-3 py-2 text-[13px] font-medium rounded-lg transition-all ${
+                className={`relative px-3 py-2 text-[13px] font-medium rounded-lg transition-all duration-300 hover:-translate-y-0.5 ${
                   active
-                    ? scrolled ? "text-foreground bg-secondary" : "text-primary-foreground bg-white/10"
-                    : scrolled ? "text-muted-foreground hover:text-foreground hover:bg-secondary/60" : "text-primary-foreground/70 hover:text-primary-foreground hover:bg-white/5"
+                    ? "text-white bg-white/15 shadow-[0_0_20px_-4px_hsl(var(--accent)/0.6)]"
+                    : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
               >
                 {link.label}
@@ -72,20 +72,21 @@ const Navbar = () => {
           })}
         </nav>
 
-        <div className="hidden md:flex items-center gap-2 shrink-0">
+        <div className="hidden lg:flex items-center gap-2 shrink-0">
           <LanguageSwitcher scrolled={scrolled} />
           <Link
             to="/contact"
-            className="group inline-flex items-center gap-1.5 rounded-xl bg-accent px-4 py-2 text-[13px] font-semibold text-accent-foreground transition-all hover:bg-accent/90 glow-accent hover:scale-[1.03]"
+            className="group relative inline-flex items-center gap-1.5 rounded-xl bg-accent px-4 py-2 text-[13px] font-semibold text-accent-foreground overflow-hidden transition-all duration-300 hover:bg-accent/90 hover:shadow-[0_8px_30px_-6px_hsl(var(--accent)/0.7)] hover:-translate-y-0.5 hover:scale-[1.04] glow-accent"
           >
-            {t.nav.getStarted[lang]}
-            <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+            <span className="relative">{t.nav.getStarted[lang]}</span>
+            <ArrowRight size={14} className="relative transition-transform group-hover:translate-x-1" />
           </Link>
         </div>
 
         {/* Mobile toggle */}
         <button
-          className={`md:hidden ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
+          className="lg:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -100,7 +101,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="md:hidden mt-3 mx-auto max-w-6xl rounded-2xl bg-background/95 backdrop-blur-xl border border-border shadow-xl overflow-hidden"
+            className="lg:hidden mt-3 mx-auto max-w-6xl rounded-2xl bg-black/95 backdrop-blur-xl border border-white/10 shadow-2xl overflow-hidden"
           >
             <nav className="flex flex-col gap-1 p-4">
               {navLinks.map((link) => (
@@ -108,8 +109,8 @@ const Navbar = () => {
                   key={link.to}
                   to={link.to}
                   onClick={() => setMobileOpen(false)}
-                  className={`text-sm font-medium px-3 py-2.5 rounded-lg transition-colors ${
-                    location.pathname === link.to ? "text-accent bg-accent/10" : "text-muted-foreground hover:bg-secondary"
+                  className={`text-sm font-medium px-3 py-2.5 rounded-lg transition-all hover:translate-x-1 ${
+                    location.pathname === link.to ? "text-accent bg-accent/15" : "text-white/75 hover:text-white hover:bg-white/10"
                   }`}
                 >
                   {link.label}
@@ -121,9 +122,10 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground mt-2 glow-accent"
+                className="group inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground mt-2 glow-accent transition-all hover:bg-accent/90 hover:scale-[1.02]"
               >
                 {t.nav.getStarted[lang]}
+                <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
               </Link>
             </nav>
           </motion.div>

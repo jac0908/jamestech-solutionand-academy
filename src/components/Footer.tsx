@@ -48,9 +48,15 @@ const Footer = () => {
               {t.footer.desc[lang]}
             </p>
             <ul className="mt-6 space-y-2.5 text-sm text-primary-foreground/60">
-              <li className="flex items-center gap-2.5"><Mail size={14} className="text-accent" /> hello@jamestech.dev</li>
-              <li className="flex items-center gap-2.5"><Phone size={14} className="text-accent" /> +251 900 000 000</li>
-              <li className="flex items-center gap-2.5"><MapPin size={14} className="text-accent" /> Addis Ababa, Ethiopia</li>
+              <li className="flex items-start gap-2.5">
+                <Mail size={14} className="text-accent mt-1 shrink-0" />
+                <a href="mailto:jamestechsolutionandacademy@gmail.com" className="hover:text-accent transition-colors break-all">jamestechsolutionandacademy@gmail.com</a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone size={14} className="text-accent shrink-0" />
+                <a href="tel:+251922067302" className="hover:text-accent transition-colors">+251 922 067 302</a>
+              </li>
+              <li className="flex items-center gap-2.5"><MapPin size={14} className="text-accent shrink-0" /> Addis Ababa, Ethiopia</li>
             </ul>
           </div>
 
@@ -83,7 +89,7 @@ const Footer = () => {
               <a href="https://github.com/jac0908" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary-foreground/70 hover:text-accent hover:bg-accent/10 hover:border-accent/40 transition-all">
                 <Github size={16} />
               </a>
-              <a href="mailto:hello@jamestech.dev" aria-label="Email" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary-foreground/70 hover:text-accent hover:bg-accent/10 hover:border-accent/40 transition-all">
+              <a href="mailto:jamestechsolutionandacademy@gmail.com" aria-label="Email" className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary-foreground/70 hover:text-accent hover:bg-accent/10 hover:border-accent/40 transition-all">
                 <Mail size={16} />
               </a>
             </div>
