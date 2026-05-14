@@ -117,13 +117,13 @@
     box-shadow: var(--glow-accent-strong);
   }
   .text-gradient {
-    background: linear-gradient(135deg, hsl(174 62% 45%), hsl(174 62% 65%));
+    background: linear-gradient(135deg, hsl(210 100% 55%), hsl(200 100% 70%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .text-gradient-warm {
-    background: linear-gradient(135deg, hsl(174 62% 40%), hsl(200 60% 50%), hsl(174 62% 55%));
+    background: linear-gradient(135deg, hsl(217 90% 45%), hsl(200 100% 55%), hsl(195 100% 65%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
