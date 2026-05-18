@@ -32,21 +32,22 @@ const Index = () => {
         {/* Floating orbs */}
         <div className="floating-orb w-[500px] h-[500px] bg-accent/10 -top-40 -right-40" />
         <div className="floating-orb w-[300px] h-[300px] bg-accent/8 bottom-20 left-10" />
-        <div className="relative container py-32 md:py-44">
-          <motion.div initial="hidden" animate="visible" className="max-w-2xl">
+        <div className="floating-orb w-[420px] h-[420px] bg-accent/8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+        <div className="relative container py-28 md:py-40">
+          <motion.div initial="hidden" animate="visible" className="max-w-3xl mx-auto text-center flex flex-col items-center">
             <motion.div custom={0} variants={fadeUp} className="inline-flex items-center gap-2 rounded-full glass px-5 py-2 mb-8">
               <Sparkles size={14} className="text-accent" />
               <span className="text-accent text-xs font-medium tracking-wide uppercase">{t.hero.badge[lang]}</span>
             </motion.div>
-            <motion.h1 custom={1} variants={fadeUp} className="text-5xl md:text-6xl lg:text-[4.5rem] font-bold leading-[1.05] text-primary-foreground tracking-tight">
+            <motion.h1 custom={1} variants={fadeUp} className="text-5xl md:text-6xl lg:text-[4.75rem] font-bold leading-[1.05] text-primary-foreground tracking-tight text-balance">
               {t.hero.title1[lang]}
               <br />
               <span className="text-gradient-warm">{t.hero.title2[lang]}</span>
             </motion.h1>
-            <motion.p custom={2} variants={fadeUp} className="mt-7 text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-lg">
+            <motion.p custom={2} variants={fadeUp} className="mt-7 text-lg md:text-xl text-primary-foreground/65 leading-relaxed max-w-xl mx-auto text-balance">
               {t.hero.desc[lang]}
             </motion.p>
-            <motion.div custom={3} variants={fadeUp} className="mt-10 flex flex-wrap gap-4">
+            <motion.div custom={3} variants={fadeUp} className="mt-10 flex flex-wrap justify-center gap-4">
               <Link to="/contact" className="group inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:gap-3 glow-accent-strong hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97]">
                 {t.nav.getStarted[lang]} <ArrowRight size={16} className="transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1" />
               </Link>
@@ -54,7 +55,7 @@ const Index = () => {
                 {t.nav.services[lang]}
               </Link>
             </motion.div>
-            <motion.div custom={4} variants={fadeUp} className="mt-12 flex flex-wrap items-center gap-6 text-primary-foreground/45 text-xs">
+            <motion.div custom={4} variants={fadeUp} className="mt-12 flex flex-wrap items-center justify-center gap-6 text-primary-foreground/45 text-xs">
               {[t.hero.badges.certified[lang], t.hero.badges.uptime[lang], t.hero.badges.local[lang]].map((badge) => (
                 <span key={badge} className="flex items-center gap-1.5">
                   <CheckCircle2 size={14} className="text-accent/70" />
