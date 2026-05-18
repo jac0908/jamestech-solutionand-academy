@@ -24,43 +24,64 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
+    let lastY = window.scrollY;
+    let ticking = false;
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        const y = window.scrollY;
+        const goingDown = y > lastY;
+        if (y < 10) {
+          setScrolled(false);
+        } else if (goingDown && y > 40) {
+          setScrolled(true);
+        } else if (!goingDown) {
+          setScrolled(false);
+        }
+        lastY = y;
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-6 pt-3 sm:pt-5">
+    <header className="fixed top-0 left-0 right-0 z-50 px-2 sm:px-4 md:px-6 pt-2 sm:pt-4 md:pt-5">
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`mx-auto max-w-6xl flex items-center justify-between gap-4 rounded-2xl px-3 sm:px-5 py-2.5 transition-all duration-500 ${
+        className={`mx-auto max-w-6xl flex items-center justify-between gap-2 sm:gap-3 md:gap-4 rounded-2xl px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 transition-[background-color,backdrop-filter,box-shadow,border-color] duration-500 ease-out will-change-[background-color,backdrop-filter] ${
           scrolled
             ? "bg-black/90 backdrop-blur-2xl border border-white/10 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.6)]"
-            : "bg-black/30 backdrop-blur-xl border border-white/10"
+            : "bg-black/20 backdrop-blur-md border border-white/5 shadow-none"
         }`}
       >
-        <Link to="/" className="flex items-center gap-3 group shrink-0">
+        <Link to="/" className="flex items-center gap-2 sm:gap-3 group shrink-0 min-w-0">
           <div className="relative">
             <div className="absolute inset-0 rounded-xl bg-accent/40 blur-md opacity-60 group-hover:opacity-100 transition-opacity" />
-            <img src={logo} alt="James Tech Solution and Academy Logo" className="relative h-10 w-10 rounded-xl object-cover ring-1 ring-white/20 shadow-lg" />
+            <img src={logo} alt="James Tech Solution and Academy Logo" className="relative h-9 w-9 sm:h-10 sm:w-10 rounded-xl object-cover ring-1 ring-white/20 shadow-lg" />
           </div>
-          <div className="hidden sm:flex flex-col leading-tight">
-            <span className="text-[13px] font-bold font-heading tracking-tight text-white">James Tech Solution & Academy</span>
-            <span className="text-[9px] tracking-[0.18em] uppercase text-white/60">Innovate · Educate · Elevate</span>
+          <div className="hidden sm:flex flex-col leading-tight min-w-0">
+            <span className="text-[12px] md:text-[13px] font-bold font-heading tracking-tight text-white truncate">
+              <span className="lg:hidden">James Tech</span>
+              <span className="hidden lg:inline">James Tech Solution & Academy</span>
+            </span>
+            <span className="text-[9px] tracking-[0.18em] uppercase text-white/60 truncate">Innovate · Educate · Elevate</span>
           </div>
         </Link>
 
         {/* Desktop */}
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1">
           {navLinks.map((link) => {
             const active = location.pathname === link.to;
             return (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`relative px-3 py-2 text-[13px] font-medium rounded-lg transition-all duration-300 hover:-translate-y-0.5 ${
+                className={`relative px-2 xl:px-3 py-2 text-[12px] xl:text-[13px] font-medium rounded-lg whitespace-nowrap transition-all duration-300 hover:-translate-y-0.5 ${
                   active
                     ? "text-white bg-white/15 shadow-[0_0_20px_-4px_hsl(var(--accent)/0.6)]"
                     : "text-white/70 hover:text-white hover:bg-white/10"
