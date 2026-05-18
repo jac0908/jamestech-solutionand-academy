@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
           <Link
             to="/contact"
-            className="group inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground transition-all hover:bg-accent/90 glow-accent-strong hover:scale-[1.02] shrink-0"
+            className="group inline-flex items-center gap-2 rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:bg-accent/90 glow-accent-strong hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97] shrink-0"
           >
             {t.nav.getStarted[lang]}
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />

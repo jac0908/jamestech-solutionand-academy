@@ -76,11 +76,11 @@ const Navbar = () => {
           <LanguageSwitcher scrolled={scrolled} />
           <Link
             to="/contact"
-            className="group relative inline-flex items-center gap-1.5 rounded-xl bg-accent px-4 py-2 text-[13px] font-semibold text-accent-foreground overflow-hidden transition-all duration-300 hover:bg-accent/90 hover:shadow-[0_8px_30px_-6px_hsl(var(--accent)/0.7)] hover:-translate-y-0.5 hover:scale-[1.04] glow-accent"
+            className="group relative inline-flex items-center gap-1.5 rounded-xl bg-accent px-4 py-2 text-[13px] font-semibold text-accent-foreground overflow-hidden transition-all duration-300 hover:bg-accent/90 hover:shadow-[0_8px_30px_-6px_hsl(var(--accent)/0.7)] hover:-translate-y-0.5 hover:scale-[1.04] focus-visible:shadow-[0_8px_30px_-6px_hsl(var(--accent)/0.7)] focus-visible:-translate-y-0.5 focus-visible:scale-[1.04] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97] glow-accent"
           >
-            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+            <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full group-focus-visible:translate-x-full" />
             <span className="relative">{t.nav.getStarted[lang]}</span>
-            <ArrowRight size={14} className="relative transition-transform group-hover:translate-x-1" />
+            <ArrowRight size={14} className="relative transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1" />
           </Link>
         </div>
 
@@ -122,10 +122,10 @@ const Navbar = () => {
               <Link
                 to="/contact"
                 onClick={() => setMobileOpen(false)}
-                className="group inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground mt-2 glow-accent transition-all hover:bg-accent/90 hover:scale-[1.02]"
+                className="group inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-accent-foreground mt-2 glow-accent transition-all duration-300 hover:bg-accent/90 hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black active:scale-[0.97]"
               >
                 {t.nav.getStarted[lang]}
-                <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
+                <ArrowRight size={14} className="transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1" />
               </Link>
             </nav>
           </motion.div>
