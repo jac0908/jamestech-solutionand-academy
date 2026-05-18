@@ -47,10 +47,10 @@ const Index = () => {
               {t.hero.desc[lang]}
             </motion.p>
             <motion.div custom={3} variants={fadeUp} className="mt-10 flex flex-wrap gap-4">
-              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:gap-3 glow-accent-strong hover:scale-[1.02]">
-                {t.nav.getStarted[lang]} <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:gap-3 glow-accent-strong hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97]">
+                {t.nav.getStarted[lang]} <ArrowRight size={16} className="transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1" />
               </Link>
-              <Link to="/services" className="inline-flex items-center gap-2 rounded-xl glass px-8 py-4 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:bg-primary-foreground/10 hover:scale-[1.02]">
+              <Link to="/services" className="inline-flex items-center gap-2 rounded-xl glass px-8 py-4 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:bg-primary-foreground/10 hover:scale-[1.02] focus-visible:bg-primary-foreground/15 focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97]">
                 {t.nav.services[lang]}
               </Link>
             </motion.div>
@@ -169,10 +169,10 @@ const Index = () => {
             </h2>
             <p className="mt-6 text-primary-foreground/55 leading-relaxed text-lg">{t.cta.desc[lang]}</p>
             <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:gap-3 glow-accent-strong hover:scale-[1.02]">
-                {t.cta.contact[lang]} <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+              <Link to="/contact" className="group inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-sm font-semibold text-accent-foreground transition-all duration-300 hover:bg-accent/90 hover:gap-3 glow-accent-strong hover:scale-[1.02] focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97]">
+                {t.cta.contact[lang]} <ArrowRight size={16} className="transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1" />
               </Link>
-              <Link to="/about" className="inline-flex items-center gap-2 rounded-xl glass px-8 py-4 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:bg-primary-foreground/10 hover:scale-[1.02]">
+              <Link to="/about" className="inline-flex items-center gap-2 rounded-xl glass px-8 py-4 text-sm font-semibold text-primary-foreground transition-all duration-300 hover:bg-primary-foreground/10 hover:scale-[1.02] focus-visible:bg-primary-foreground/15 focus-visible:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 focus-visible:ring-offset-2 focus-visible:ring-offset-background active:scale-[0.97]">
                 {t.cta.learn[lang]}
               </Link>
             </div>
